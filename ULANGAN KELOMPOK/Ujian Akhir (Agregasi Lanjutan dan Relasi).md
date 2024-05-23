@@ -51,7 +51,7 @@ CREATE TABLE siswa (
     id_siswa INT AUTO_INCREMENT PRIMARY KEY,
     nama_siswa VARCHAR(100) NOT NULL,
     kelas VARCHAR(50) NOT NULL,
-    saldo DECIMAL(10, 2) NULL
+    saldo DECIMAL(10, 2) 
 );
 ```
 ### **2.Tabel `kategori`**
@@ -152,8 +152,19 @@ ORDER BY
     - **`detail_transaksi dt ON t.id_transaksi = dt.id_transaksi`**: Menghubungkan tabel `transaksi` dengan `detail_transaksi` berdasarkan `id_transaksi`.
     - **`produk p ON dt.id_produk = p.id_produk`**: Menghubungkan tabel `detail_transaksi` dengan tabel `produk` berdasarkan `id_produk`.
 3. **Bagian WHERE**:
-    - **`MONTH(t.tanggal_transaksi) = MONTH(CURDATE())`**: Memfilter data transaksi berdasarkan bulan saat ini.
-    - **`YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**: Memfilter data transaksi berdasarkan tahun saat ini.
+	**kesimpulan:** query ini memfilter transaksi berdasarkan bulan dengan `MONTH`, tahun dengan `YEAR`, dan keduanya untuk transaksi di bulan dan tahun di waktu sekarang.
+    - ### **`MONTH(t.tanggal_transaksi) = MONTH(CURDATE())
+       **kesimpulan:** Bahwasannya `MONTH(t.tanggal_transaksi) = MONTH(CURDATE())`  Memfilter data transaksi yang terjadi **pada bulan yang sama dengan bulan saat ini**, tanpa memperhatikan tahun dan tanggal.
+	1. **`MONTH()`** adalah fungsi untuk mengekstrak **bulan** dari sebuah tanggal. Contohnya, jika `t.tanggal_transaksi` adalah `'2024-12-10'`, maka `MONTH(t.tanggal_transaksi)` akan menghasilkan **12** (Desember).
+	2. **`CURDATE()`** menghasilkan **tanggal saat ini** berdasarkan sistem, dalam format `YYYY-MM-DD`. Contoh: Jika hari ini adalah `'2024-12-11'`, maka `CURDATE()` bernilai `'2024-12-11'`.     Dengan demikian, `MONTH(CURDATE())` menghasilkan **12** (bulan Desember).
+	3. Kondisi `MONTH(t.tanggal_transaksi) = MONTH(CURDATE())` memfilter data transaksi yang terjadi **pada bulan yang sama dengan bulan saat ini**, terlepas dari tanggal atau tahunnya.
+	- ### **`YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**
+	   **kesimpulan:** kalau **`YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**  
+	   Memfilter data transaksi yang terjadi **pada tahun yang sama dengan tahun saat ini**, tanpa memperhatikan bulan dan tanggal.
+	1. **`YEAR()`** adalah fungsi untuk mengekstrak **tahun** dari sebuah tanggal. Contohnya, jika `t.tanggal_transaksi` adalah `'2024-12-10'`, maka `YEAR(t.tanggal_transaksi)` menghasilkan **2024**.
+	2. `YEAR(CURDATE())` menghasilkan **tahun saat ini** berdasarkan tanggal sistem. Contoh: Jika hari ini adalah `'2024-12-11'`, maka `YEAR(CURDATE())` menghasilkan **2024**.
+	3. Kondisi `YEAR(t.tanggal_transaksi) = YEAR(CURDATE())` memfilter data transaksi yang terjadi **pada tahun yang sama dengan tahun saat ini**, terlepas dari tanggal atau bulannya.
+
 4. **Bagian GROUP BY**:
     - **`p.id_produk`**: Mengelompokkan hasil berdasarkan ID produk, sehingga perhitungan total terjual dan pendapatan dilakukan untuk masing-masing produk.
 5. **Bagian HAVING**:
@@ -221,6 +232,7 @@ Query ini dirancang untuk menentukan produk dengan jumlah penjualan tertinggi se
 | 4   | VALENTINO        | 3              | membantu contoh soal query 2                                  |
 | 5   | IQBAL            | 3              | membantu ERD dan membantu database tabel kategori             |
 | 6   | MUHAMMAD ARIEL   | 2              | membantu mengerjakan contoh soal query 1                      |
+|     |                  |                |                                                               |
 |     |                  |                |                                                               |
 |     |                  |                |                                                               |
 |     |                  |                |                                                               |

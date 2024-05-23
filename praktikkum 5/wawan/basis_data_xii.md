@@ -3,7 +3,7 @@ STRUKTUR
 
 SQL
 ```sql
-CREATE TABLE pegawai (
+CREATE TABLE pegawai ( 
 -> NIP INT PRIMARY KEY,
 -> NDep VARCHAR(255) NOT NULL,
 -> NBlk VARCHAR(255),
