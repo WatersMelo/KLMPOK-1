@@ -54,7 +54,7 @@ Penjelasan :
     - *NOT NULL*: Menandakan bahwa kolom ini harus diisi; nilai kosong (NULL) tidak diperbolehkan.
 
 Hasil : 
-![[asset/1.png]]
+![](asset/1.png)
 
 *3. Isian Tabel Yang Telah Di Buat*
 ~~~sql
@@ -103,12 +103,12 @@ Penjelasan :
     - Baris kedua dan seterusnya mengikuti pola yang sama, dengan data yang berbeda.
 
 Hasil : 
-![[asset/Screenshot (57).png]]
+![](asset/Screenshot (57).png)
 
 # PRAKTIKKUM 5
 ## Latihan-1
 **GAMBAR : 
-![[asset/Screenshot (34).png]]
+![[asset/2.png]]
 
 *STRIKTUR :*
 ~~~sql
@@ -132,7 +132,7 @@ Query ini akan menghasilkan dua kolom dalam hasilnya:
 - *JumlahJabatan*: Jumlah total entri yang ada dalam kolom Jabatan, yang umumnya sama dengan jumlah pegawai jika setiap pegawai memiliki satu jabatan.
 ## Latihan-2
 **GAMBAR : 
-![[asset/Screenshot (35).png]]
+![](asset/2.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -149,7 +149,7 @@ select count(NIP) AS JumlahPegawai
 - WHERE NoCab = 'C102': Bagian ini menetapkan kondisi filter, yaitu hanya menghitung pegawai yang memiliki nilai NoCab sama dengan 'C102'. NoCab mungkin adalah kolom yang menunjukkan kode cabang tempat pegawai bekerja.
 ## Latihan-3
 **GAMBAR : 
-![[asset/Screenshot (39).png]]
+![](asset/3.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -166,7 +166,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
 - WHERE Jabatan = 'Manager': Bagian ini menetapkan kondisi filter di mana hanya baris yang memiliki nilai Jabatan sama dengan 'Manager' yang akan dimasukkan dalam perhitungan. Ini berarti hanya pegawai yang memiliki jabatan 'Manager' yang akan dihitung total gajinya.
 ## Latihan-4
 **GAMBAR : 
-![[asset/Screenshot (40).png]]
+![](asset/4.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -188,7 +188,7 @@ SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai
     - Mengelompokkan hasil query berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa penghitungan COUNT(NIP) dilakukan secara terpisah untuk setiap nilai unik di kolom NoCab.
 ## Latihan-5
 **GAMBAR : 
-![[asset/Screenshot (42).png]]
+![](asset/5.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -215,7 +215,7 @@ SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai
 
 ## Latihan-6
 **GAMBAR : 
-![[asset/Screenshot (43).png]]
+![](asset/6.png)
 *STRIKTUR :*
 ~~~sql
 SELECT SUM(Gaji) AS Total_Gaji
@@ -231,7 +231,7 @@ SELECT SUM(Gaji) AS Total_Gaji
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## Latihan-7
 **GAMBAR : 
-![[asset/Screenshot (44).png]]
+![](asset/7.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -252,7 +252,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
     - Menetapkan kondisi filter untuk query. Hanya baris yang memiliki nilai Jabatan sama dengan 'Manager' yang akan dihitung. Dengan kata lain, hanya pegawai dengan jabatan 'Manager' yang akan dihitung total gajinya.
 ## Latihan-8
 **GAMBAR : 
-![[asset/Screenshot (45).png]]
+![](asset/8.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -274,7 +274,7 @@ SELECT NoCab, SUM(Gaji) AS TotalGaji
     - Mengelompokkan hasil berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa perhitungan SUM(Gaji) dilakukan secara terpisah untuk setiap nilai unik di kolom NoCab, yaitu setiap cabang.
 ## Latihan-9
 **GAMBAR : 
-![[asset/Screenshot (46).png]]
+![](asset/9.png)
 
 *STRIKTUR :*
 ```sql
@@ -300,7 +300,7 @@ SELECT NoCab, SUM(Gaji) AS Total_Gaji
     - *SUM(Gaji) >= 8000000*: Menyaring hasil agar hanya cabang-cabang yang memiliki total gaji 8.000.000 atau lebih yang ditampilkan.
 ## Latihan-10
 **GAMBAR : 
-![[asset/Screenshot (47).png]]
+![](asset/10.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -317,7 +317,7 @@ SELECT AVG(Gaji) AS Rata_rata
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## Latihan-11
 **GAMBAR : 
-![[asset/Screenshot (48).png]]
+![](asset/11.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -339,7 +339,7 @@ SELECT AVG(Gaji) AS GajiRataMgr
 
 ## Latiahan-12
 **GAMBAR : 
-![[asset/Screenshot (49).png]]
+![](asset/12.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -362,7 +362,7 @@ SELECT NoCab, AVG(Gaji) AS RataGaji
     - Setelah pengelompokan, fungsi agregat (seperti AVG) diterapkan pada setiap grup.
 ## Latiahan-13
 **GAMBAR : 
-![[asset/Screenshot (51).png]]
+![](asset/13.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -389,7 +389,7 @@ SELECT NoCab, AVG(Gaji) AS RataGaji
     - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## Latiahan-14
 **GAMBAR : 
-![[asset/Screenshot (52).png]]
+![](asset/14.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -406,7 +406,7 @@ SELECT MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     - *FROM pegawai*: Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal ini, data diambil dari tabel pegawai.
 ## Latiahan-15
 **GAMBAR : 
-![[asset/Screenshot (53).png]]
+![](asset/15.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -428,7 +428,7 @@ SELECT NoCab, Max(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     - *GROUP BY NoCab*: Bagian ini mengelompokkan hasil berdasarkan kolom NoCab. Artinya, data akan dikelompokkan berdasarkan nomor cabang, dan untuk setiap cabang, fungsi MAX dan MIN akan diterapkan pada kolom Gaji.
 ## Latiahan-16
 **GAMBAR : 
-![[asset/Screenshot (54).png]]
+![](asset/16.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -453,7 +453,7 @@ SELECT NoCab, Max(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     - *HAVING COUNT(NIP) >= 3*: Kondisi ini menyaring hasil grup yang memenuhi kriteria tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung berdasarkan NIP, yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih yang akan dimasukkan dalam hasil.
 ## Latiahan-17
 **GAMBAR : 
-![[asset/Screenshot (55).png]]
+![](asset/17.png)
 
 *STRIKTUR :*
 ~~~sql
@@ -482,7 +482,7 @@ SELECT COUNT(NIP) AS JumlahPegawai, SUM(Gaji) AS TotalGaji,
     - Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## Latiahan-18
 **GAMBAR : 
-![[asset/Screenshot (56).png]]
+![](asset/18.png)
 
 *STRIKTUR :*
 ~~~sql

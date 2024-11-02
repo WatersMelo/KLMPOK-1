@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8494b29f5e8e2be1",
+        "id": "8eb2b33a0f4cf230",
         "type": "tabs",
         "children": [
           {
-            "id": "6fbc65ef6784b12c",
+            "id": "2e1555a4af9a3674",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
+                "file": "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PRAKTIKKUM 7"
-            }
-          },
-          {
-            "id": "733587c13ebfa3ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "praktikkum 5/iqbal/Basis data iqbal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Basis data iqbal"
+              "title": "Agregasi dengan GROUP BY & HAVING"
             }
           }
         ]
@@ -176,44 +162,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fbc65ef6784b12c",
+  "active": "2e1555a4af9a3674",
   "lastOpenFiles": [
+    "praktikkum 5/rivaldo/AGREGASI (GROUP BY & HAVING).md",
+    "praktikkum 5/iqbal/Basis data iqbal.md",
+    "praktikkum 5/iqbal/asset/25.png",
+    "praktikkum 5/iqbal/asset/22.png",
+    "praktikkum 5/iqbal/asset/23.png",
+    "praktikkum 5/iqbal/asset/24.png",
+    "asset/Screenshot.md",
+    "asset",
+    "praktikkum 5/iqbal/asset/3.png",
+    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 5/ariel/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
     "praktikkum 7/iqbal/asset/Screenshot (83).png",
     "praktikkum 7/iqbal/asset/Screenshot (84).png",
     "praktikkum 7/iqbal/asset/Screenshot (80).png",
     "praktikkum 7/iqbal/asset/Screenshot (78).png",
     "praktikkum 7/iqbal/asset/Screenshot (103).png",
-    "praktikkum 7/iqbal/asset/Screenshot (102).png",
-    "praktikkum 7/iqbal/asset/Screenshot (101).png",
-    "praktikkum 5/iqbal/Basis data iqbal.md",
-    "praktikkum 7/iqbal/asset/Screenshot (100).png",
-    "praktikkum 7/iqbal/asset/Screenshot (99).png",
-    "praktikkum 7/iqbal/asset/Screenshot (98).png",
-    "praktikkum 7/iqbal/asset/Screenshot (97).png",
-    "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
     "praktikkum 7/ariel/catatan aril.md",
     "praktikkum 7/iqbal/asset",
     "praktikkum 7/iqbal/assett",
     "praktikkum 7/iqbal/New folder",
     "Basis data iqbal.md",
     "praktikkum 5/iqbal/asset",
-    "asset",
     "basdat iqbal.zip",
     "praktikkum 5/wawan/basis data xii.md",
     "praktikkum 5/valen/TGS-2 DART.md",
-    "praktikkum 5/rivaldo/AGREGASI (GROUP BY & HAVING).md",
     "praktikkum 5/penilaian kelompok/penilaian kelompok.md",
     "praktikkum 7/wawan/praktikum 7.md",
     "praktikkum 7/wawan/praktikum 7.pdf",
     "praktikkum 5/wawan/basis data xii.pdf",
     "praktikkum 5/wawan/assett/jumlahpgawai",
-    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
     "assett/JumlahPegawai.md",
     "assett",
     "basisdata_XII/assett/assett.md",
     "praktikkum 7/RIVALDO/CATATAN TABEL - PRAKTIKKUM 7.md",
     "praktikkum 7/aldo/CATATAN TABEL - PRAKTIKKUM 7.md",
-    "praktikkum 5/ariel/Agregasi dengan GROUP BY & HAVING.md",
     "AGREGASI (GROUP BY & HAVING).md",
     "praktikkum 7/faruq/CATATAN TABEL - PRAKTIKKUM 7.md",
     "praktikkum 7/VALEN/CATATAN TABEL VALEN.md",
@@ -222,7 +208,6 @@
     "praktikkum 7/indra/basis data xii.md",
     "praktikkum 2/ariel/catatan aril.md",
     "praktikkum 1/faruq/Agregasi dengan GROUP BY & HAVING.md",
-    "praktikkum 5/wawan/assett/assett.md",
-    "praktikkum 2/faruq/CATATAN TABEL - PRAKTIKKUM 2.md"
+    "praktikkum 5/wawan/assett/assett.md"
   ]
 }

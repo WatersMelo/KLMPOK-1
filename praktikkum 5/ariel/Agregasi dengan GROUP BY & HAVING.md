@@ -112,7 +112,7 @@ INSERT INTO pegawai (NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab) VA
 
 ## PRAKTIKKUM 5
 **GAMBAR : 
-![[assets/1.jpg]]
+![](assets/1.jpg)
 
 *STRIKTUR :*
 ```sql
@@ -128,7 +128,7 @@ SELECT COUNT(NIP) AS JumlahPegawai, COUNT(Jabatan) AS JumlahJabatan FROM pegawai
 - Hasilnya = karena ada 9 barisan data, Yang ingin dihitung adalah kolom NIP, Jumlah dari kolom NIP (isi datanya) ada 9, ditampilkan sebagai Jumlah pesawai. Kolom Jabatan Jusa dihitung, akan tetapi ada satu data yang berisi Null (kosong), oleh karena itu hanya ada 8 data ditampilkan sebagai Jumlah Jabatan.
 ## Latihan-2
 **GAMBAR : 
-![[assets/2.jpg]]
+![](assets/2.jpg)
 
 *STRIKTUR :*
 ```sql
@@ -148,7 +148,7 @@ select count(NIP) AS JumlahPegawai
 - Hasilnya = Di 9 barisan data Yangaja Pada tabel Pegawai, kita ingin menghitung Jumlah barisan data yang memiliki nilai 'clo₂ Pada kolom "Nocab" nya dengan menggunakan COUNT. Jadi Yang muncul adalah 3 0 barisan data. kita Juga ingin mengubah nama dari kolom hasil Perintah COUNT secara sementara dengan Perintah AS, namanya adalah Jumlah Pegawai.
 ## Latihan-3
 **GAMBAR : 
-![[assets/3.jpg]]
+![](assets/3.jpg)
 
 *STRIKTUR :*
 ```sql
@@ -168,7 +168,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
 - Hasilnya = Berdasarkan. 9 barisan data, masing-masing. nilai, dalam kolom Nocab
 ## Latihan-4
 **GAMBAR : 
-![[assets/4.jpg]]
+![](assets/4.jpg)
 
 *STRIKTUR :*
 ```sql
