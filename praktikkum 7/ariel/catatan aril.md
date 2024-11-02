@@ -21,7 +21,7 @@ WHERE orders.CustomerID = customers.customerID;
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.
 **HASILNYA:**
-![[praktikkum 7/ariel/assets/1.PNG]]
+![](assets/1.PNG)
 # 2
 
 **Query Sql:**
@@ -46,7 +46,7 @@ WHERE c.City = 'London';
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.Jadi hanya barisan data yang kolom city dari tabel customers memenuhi data "London" yang bisa tampil.
 **Hasilnya:**
-![[praktikkum 7/ariel/assets/2.PNG]]
+![](assets/2.PNG)
 # 3
 **Query Sql:**
 ```SQL
@@ -67,7 +67,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **(o.EmpID = e.EmpID)** = data pada kolom EmpID dalam tabel o(orders) harus sama dengan data pada kolom EmpID dalam tabel e(employees).
 - **Hasilnya** = Yang tampil adalah kolom yang memenuhi semua kondisi dari WHERE.
 **Hasilnya:**
-![[praktikkum 7/ariel/assets/3.PNG]]
+![](assets/3.PNG)
 # 4
 **Query Sql:**
 ```SQL
@@ -92,7 +92,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
     - o.EmpID = e.EmpID: Menghubungkan tabel orders dengan employees berdasarkan ID karyawan.
     - c.FirstName = 'Margaret': Memfilter hasil untuk hanya menampilkan pesanan dari pelanggan bernama depan Margaret.
 **Hasilnya:**
-![[praktikkum 7/ariel/assets/4.PNG]]
+![](assets/4.PNG)
 # 5
 **Query Sql:**
 ```SQL
@@ -135,7 +135,7 @@ SELECT c.CustomerID, c.CompanyName, o.OrderID,
 
 **Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.**
 **Hasilnya:**
-	![[praktikkum 2/ariel/assets/5.PNG]]
+	![](assets/5.PNG)
 # 6
 **Query Sql:**
 ```SQL
@@ -180,7 +180,7 @@ WHERE c.customerid=o.CustomerID and o.orderid =od.orderid and p.productid=od.pro
 
 - Hasilnya = kolom LastName dan FirstName dari tabel E(employees) digabung dengan concat dan hasil kolomnya namanya diubah sementara jadi EmployeeName.
 **Hasilnya:**
-![[praktikkum 7/ariel/assets/6.PNG]]
+![](assets/6.PNG)
 # 7. **Creating a View (`CustOrderEmp`)**:
 **Query Sql:**
 ```SQL
@@ -214,7 +214,7 @@ CREATE VIEW CustOrderEmp
     
 - **Hasilnya** = sebuah tabel virtual telah dibuat dengan nama **custorderEmp** yang berisi kolom-kolom dari 3 tabel **customers**, **orders**, **employees** dan telah memenuhi semua kondisi.
 **Hasilnya:**
-![](ASEET/7.png)
+![](assets/7.PNG)
 # 8 SQL untuk Membuat _View_ `odproductsc`:
 
 ```sql
@@ -242,10 +242,10 @@ CREATE VIEW CustOrderEmp
     
 - **Hasilnya** = Tabel virtual yang bernama **odProducts** yang terdiri dari kolom-kolom yang diambil dari 2 tabel **orderdetails** dan **products**.
 **HASILNYA:**
-![[7.PNG 1.PNG]]
+![](assets/8.PNG)
  Menampilkan Data dari _View_ `odproductsc`:
 **hasilnya:**
-![[7.PNG 2.PNG]]
+![](assets/9.PNG)
 # 9
 **QUERY SQL:**
 ```sql
@@ -283,7 +283,7 @@ CREATE VIEW CustOrderEmp
     
 - **Hasil** = akan tampil hasil pembulatan dari kolom-kolom yang telah memenuhi kondisi dari **WHERE**.
 **HASILNYA:**
-	![[praktikkum 7/ariel/assets/9.PNG]]
+	![](assets/10.PNG)
 # 10
 **QUERY SQL:**
 ```sql
@@ -319,7 +319,7 @@ CREATE VIEW CustOrderEmp
  
 - hasilnya = jadi, kolom yang dikelompokkan adalah customerID dan companyName dan tabel diurutkan berdasarkan kolom customerID
 **HASILNYA:**
-![[praktikkum 7/ariel/assets/10.PNG]]
+![](assets/1.PNG)
 
 
 
