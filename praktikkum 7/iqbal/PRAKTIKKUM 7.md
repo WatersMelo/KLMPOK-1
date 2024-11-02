@@ -17,7 +17,7 @@ SELECT orders.OrderID, orders.OrderDate, orders.CustomerID, customers.CompanyNam
 - Hasilnya = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.
 
 HASILNYA:
-![[asset/Screenshot (97).png]]
+![](asset/1.png)
 # 2
 Query Sql
 ~~~SQL

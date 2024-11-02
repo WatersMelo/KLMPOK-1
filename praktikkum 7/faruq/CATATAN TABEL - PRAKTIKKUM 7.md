@@ -22,7 +22,7 @@ WHERE orders.CustomerID = customers.customerID;
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.
 **HASILNYA:**
-![](Assets/1.jpg)
+![](assets/1.jpg)
 
 # 2
 
@@ -48,7 +48,7 @@ WHERE c.City = 'London';
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.Jadi hanya barisan data yang kolom city dari tabel customers memenuhi data "London" yang bisa tampil.
 **Hasilnya:**
-![](Assets/2.jpg)
+![](assets/2.jpg)
 
 # 3
 **Query Sql:**
@@ -70,7 +70,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **(o.EmpID = e.EmpID)** = data pada kolom EmpID dalam tabel o(orders) harus sama dengan data pada kolom EmpID dalam tabel e(employees).
 - **Hasilnya** = Yang tampil adalah kolom yang memenuhi semua kondisi dari WHERE.
 **Hasilnya:**
-![](Assets/3.jpg)
+![](assets/3.jpg)
 
 # 4
 **Query Sql:**
@@ -95,7 +95,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **(e.FirstName = "Margaret")** = data pada kolom FirstName dalam tabel e(employees) harus berisi data "Margaret" agar bisa tampil.
 - **Hasilnya** = Jadi barisan data yang sudah memenuhi kondisi WHERE akan tampil, terutama kolom FirstName dari tabel employees yang isinya "Margaret".
 **Hasilnya:**
-![](Assets/4.jpg)
+![](assets/4.jpg)
 
 # 5
 **Query Sql:**
@@ -139,7 +139,7 @@ SELECT c.CustomerID, c.CompanyName, o.OrderID,
 
 - **Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.**
 **Hasilnya:**
-	![](Assets/5.jpg)
+	![](assets/5.jpg)
 
 # 6
 **Query Sql:**
@@ -185,7 +185,7 @@ WHERE c.customerid=o.CustomerID and o.orderid =od.orderid and p.productid=od.pro
 
 - Hasilnya = kolom LastName dan FirstName dari tabel E(employees) digabung dengan concat dan hasil kolomnya namanya diubah sementara jadi EmployeeName.
 **Hasilnya:**
-![](Assets/6.jpg)
+![](assets/6.jpg)
 
 # 7. **Creating a View (`CustOrderEmp`)**:
 **Query Sql:**
@@ -220,13 +220,13 @@ MariaDB [company_faruq]> CREATE VIEW CustOrderEmp
     
 - **Hasilnya** = sebuah tabel virtual telah dibuat dengan nama **custorderEmp** yang berisi kolom-kolom dari 3 tabel **customers**, **orders**, **employees** dan telah memenuhi semua kondisi.
 **Hasilnya:**
-![](Assets/7.jpg)
+![](assets/7.jpg)
  Memilih Data dari View:
 ```sql
 SELECT * FROM CustOrderEmp;
 ```
 **hasilnya:**
-![](Assets/CustomOrder.jpg)
+![](assets/CustomOrder.jpg)
 # 8
 ### SQL untuk Membuat _View_ `odproductsc`:
 
@@ -255,14 +255,14 @@ MariaDB [company_faruq]> CREATE VIEW odproductsc
     
 - **Hasilnya** = Tabel virtual yang bernama **odProducts** yang terdiri dari kolom-kolom yang diambil dari 2 tabel **orderdetails** dan **products**.
 **HASILNYA:**
-![](Assets/odproduct.jpg)
+![](assets/odproduct.jpg)
 **SQL untuk Menampilkan Data dari _View_ `odproductsc`:**
 ```sql
 `SELECT * FROM odproductsc;`
 ```
 
 **hasilnya:**
-![](Assets/tol.jpg)
+![](assets/tol.jpg)
 
 # 9
 **QUERY SQL:**
@@ -301,7 +301,7 @@ MariaDB [company_faruq]> SELECT c.CustomerID, c.CompanyName, o.OrderID, od.Produ
     
 - **Hasil** = akan tampil hasil pembulatan dari kolom-kolom yang telah memenuhi kondisi dari **WHERE**.
 **HASILNYA:**
-![](Assets/9.jpg)
+![](assets/9.jpg)
 
 # 10
 **QUERY SQL:**
@@ -338,7 +338,7 @@ MariaDB [company_faruq]> SELECT c.customerid, c.companyname, ROUND(SUM((1-od.dis
 - hasilnya = jadi, kolom yang dikelompokkan adalah customerID dan companyName dan tabel diurutkan berdasarkan kolom customerID
 
 **HASILNYA:**
-![](Assets/10.jpg)
+![](assets/10.jpg)
 
 
 

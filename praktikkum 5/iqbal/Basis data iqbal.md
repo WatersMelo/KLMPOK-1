@@ -54,7 +54,7 @@ Penjelasan :
     - *NOT NULL*: Menandakan bahwa kolom ini harus diisi; nilai kosong (NULL) tidak diperbolehkan.
 
 Hasil : 
-![](asset/1.png)
+![](praktikkum%205/iqbal/asset/1.png)
 
 *3. Isian Tabel Yang Telah Di Buat*
 ~~~sql
