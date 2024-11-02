@@ -4,47 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "cc96e9644b4da630",
+        "id": "8494b29f5e8e2be1",
         "type": "tabs",
         "children": [
           {
-            "id": "dc70dbc86048b7d1",
+            "id": "6fbc65ef6784b12c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "praktikkum 2/VALEN/CATATAN TABEL VALEN.md",
+                "file": "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "PRAKTIKKUM 7"
             }
           },
           {
-            "id": "eefe7a565f31ae66",
+            "id": "733587c13ebfa3ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "praktikkum 2/VALEN/CATATAN TABEL VALEN.md",
+                "file": "praktikkum 5/iqbal/Basis data iqbal.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "e554b130ae4bada3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "praktikkum 2/penilaian kelompok/penilaian kelompok.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Basis data iqbal"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -64,7 +55,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -79,7 +72,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -87,7 +82,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -110,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "praktikkum 2/penilaian kelompok/penilaian kelompok.md",
+                "file": "praktikkum 5/valen/TGS-2 DART.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +115,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for TGS-2 DART"
             }
           },
           {
@@ -127,10 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "praktikkum 2/penilaian kelompok/penilaian kelompok.md",
+                "file": "praktikkum 5/valen/TGS-2 DART.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from TGS-2 DART"
             }
           },
           {
@@ -141,7 +142,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -150,8 +153,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "praktikkum 2/penilaian kelompok/penilaian kelompok.md"
-              }
+                "file": "praktikkum 5/valen/TGS-2 DART.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of TGS-2 DART"
             }
           }
         ]
@@ -171,43 +176,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e554b130ae4bada3",
+  "active": "6fbc65ef6784b12c",
   "lastOpenFiles": [
-    "praktikkum 1/faruq/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 7/iqbal/asset/Screenshot (83).png",
+    "praktikkum 7/iqbal/asset/Screenshot (84).png",
+    "praktikkum 7/iqbal/asset/Screenshot (80).png",
+    "praktikkum 7/iqbal/asset/Screenshot (78).png",
+    "praktikkum 7/iqbal/asset/Screenshot (103).png",
+    "praktikkum 7/iqbal/asset/Screenshot (102).png",
+    "praktikkum 7/iqbal/asset/Screenshot (101).png",
+    "praktikkum 5/iqbal/Basis data iqbal.md",
+    "praktikkum 7/iqbal/asset/Screenshot (100).png",
+    "praktikkum 7/iqbal/asset/Screenshot (99).png",
+    "praktikkum 7/iqbal/asset/Screenshot (98).png",
+    "praktikkum 7/iqbal/asset/Screenshot (97).png",
+    "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
+    "praktikkum 7/ariel/catatan aril.md",
+    "praktikkum 7/iqbal/asset",
+    "praktikkum 7/iqbal/assett",
+    "praktikkum 7/iqbal/New folder",
+    "Basis data iqbal.md",
+    "praktikkum 5/iqbal/asset",
+    "asset",
+    "basdat iqbal.zip",
+    "praktikkum 5/wawan/basis data xii.md",
+    "praktikkum 5/valen/TGS-2 DART.md",
+    "praktikkum 5/rivaldo/AGREGASI (GROUP BY & HAVING).md",
+    "praktikkum 5/penilaian kelompok/penilaian kelompok.md",
+    "praktikkum 7/wawan/praktikum 7.md",
+    "praktikkum 7/wawan/praktikum 7.pdf",
+    "praktikkum 5/wawan/basis data xii.pdf",
+    "praktikkum 5/wawan/assett/jumlahpgawai",
+    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
+    "assett/JumlahPegawai.md",
+    "assett",
+    "basisdata_XII/assett/assett.md",
+    "praktikkum 7/RIVALDO/CATATAN TABEL - PRAKTIKKUM 7.md",
+    "praktikkum 7/aldo/CATATAN TABEL - PRAKTIKKUM 7.md",
+    "praktikkum 5/ariel/Agregasi dengan GROUP BY & HAVING.md",
+    "AGREGASI (GROUP BY & HAVING).md",
+    "praktikkum 7/faruq/CATATAN TABEL - PRAKTIKKUM 7.md",
+    "praktikkum 7/VALEN/CATATAN TABEL VALEN.md",
+    "praktikkum 7/indra/assett/assett.md",
+    "praktikkum 7/penilaian kelompok/penilaian kelompok.md",
+    "praktikkum 7/indra/basis data xii.md",
     "praktikkum 2/ariel/catatan aril.md",
-    "praktikkum 2/ariel/catatan aril.pdf",
-    "praktikkum 2/ariel/CATATAN.md",
-    "praktikkum 2/ariel/assets/10.PNG",
-    "praktikkum 2/ariel/assets/9.PNG",
-    "praktikkum 2/ariel/assets/7.PNG 2.PNG",
-    "praktikkum 2/VALEN/CATATAN TABEL VALEN.md",
-    "praktikkum 2/ariel/assets/7.PNG 1.PNG",
-    "praktikkum 2/ariel/assets/6.PNG",
-    "praktikkum 2/ariel/assets/5.PNG",
-    "praktikkum 2/ariel/assets/4.PNG",
-    "praktikkum 2/ariel/assets/3.PNG",
-    "praktikkum 2/ariel/assets/2.PNG",
-    "Untitled",
-    "praktikkum 2/ariel/assets/1.PNG",
-    "praktikkum 2/ariel/assets",
-    "praktikkum 2/ariel/New folder",
-    "praktikkum 2/ariel",
-    "praktikkum 2/New folder",
-    "praktikkum 2/faruq/CATATAN TABEL - PRAKTIKKUM 2.md",
-    "praktikkum 2/penilaian kelompok/penilaian kelompok.md",
-    "praktikkum 2/faruq/CATATAN TABEL - PRAKTIKKUM 7.pdf",
-    "praktikkum 2/VALEN/CATATAN TABEL VALEN.pdf",
-    "praktikkum 2/VALEN/ASEET",
-    "praktikkum 2/Wawan/basis data xii.md",
-    "praktikkum 2/Wawan/basisdata_XII.md",
-    "ASEET.md",
-    "a.md",
-    "Assets/show_tables.md",
-    "Assets",
-    "CATATAN TABEL VALEN.md",
-    "praktikkum 2/CATATAN TABEL VALEN/CATATAN TABEL VALEN.md",
-    "CATATAN TABEL VALEN/CATATAN TABEL VALEN.md",
-    "praktikkum 1/wawan/basis data xii.md",
-    "KONTOL.md"
+    "praktikkum 1/faruq/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 5/wawan/assett/assett.md",
+    "praktikkum 2/faruq/CATATAN TABEL - PRAKTIKKUM 2.md"
   ]
 }
