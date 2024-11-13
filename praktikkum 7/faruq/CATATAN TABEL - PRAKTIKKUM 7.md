@@ -21,6 +21,7 @@ WHERE orders.CustomerID = customers.customerID;
 - **WHERE** = kondisi yang harus dipenuhi oleh suatu kolom data agar bisa ditampilkan
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.
+
 **HASILNYA:**
 ![](assets/1.jpg)
 
@@ -47,6 +48,7 @@ WHERE c.City = 'London';
 - **WHERE** = kondisi yang harus dipenuhi oleh suatu kolom data agar bisa ditampilkan
 - **(orders.CustID = customers.CustomerID)** = kondisi dari WHERE yang harus dipenuhi: Jadi, data pada kolom CustID dalam tabel orders harus sama dengan data pada kolom CustomerID dalam tabel customers agar masing-masing dapat ditampilkan.
 - **Hasilnya** = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.Jadi hanya barisan data yang kolom city dari tabel customers memenuhi data "London" yang bisa tampil.
+
 **Hasilnya:**
 ![](assets/2.jpg)
 
@@ -69,6 +71,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **AND** = untuk menyeleksi dua data atau lebih pada perintah WHERE.
 - **(o.EmpID = e.EmpID)** = data pada kolom EmpID dalam tabel o(orders) harus sama dengan data pada kolom EmpID dalam tabel e(employees).
 - **Hasilnya** = Yang tampil adalah kolom yang memenuhi semua kondisi dari WHERE.
+
 **Hasilnya:**
 ![](assets/3.jpg)
 
@@ -94,6 +97,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **AND** = untuk menyeleksi dua data atau lebih pada perintah WHERE.
 - **(e.FirstName = "Margaret")** = data pada kolom FirstName dalam tabel e(employees) harus berisi data "Margaret" agar bisa tampil.
 - **Hasilnya** = Jadi barisan data yang sudah memenuhi kondisi WHERE akan tampil, terutama kolom FirstName dari tabel employees yang isinya "Margaret".
+
 **Hasilnya:**
 ![](assets/4.jpg)
 
@@ -137,7 +141,8 @@ SELECT c.CustomerID, c.CompanyName, o.OrderID,
 
 - **ORDER BY C.CustomerID = untuk menurut data berdasarkan kolom CustomerID dari tabel customers.**
 
-- **Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.**
+- **Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.
+
 **Hasilnya:**
 	![](assets/5.jpg)
 
@@ -184,6 +189,7 @@ WHERE c.customerid=o.CustomerID and o.orderid =od.orderid and p.productid=od.pro
 - **ORDER BY O.OrderID** = untuk menurut data berdasarkan kolom OrderID dari tabel orders.
 
 - Hasilnya = kolom LastName dan FirstName dari tabel E(employees) digabung dengan concat dan hasil kolomnya namanya diubah sementara jadi EmployeeName.
+
 **Hasilnya:**
 ![](assets/6.jpg)
 
@@ -219,12 +225,14 @@ MariaDB [company_faruq]> CREATE VIEW CustOrderEmp
 - **(o.EmpID = e.EmpID)** = data pada kolom EmpID dari tabel **o(orders)** harus sama dengan data pada kolom EmpID dari tabel **e(Employees)** agar bisa dimasukkan.
     
 - **Hasilnya** = sebuah tabel virtual telah dibuat dengan nama **custorderEmp** yang berisi kolom-kolom dari 3 tabel **customers**, **orders**, **employees** dan telah memenuhi semua kondisi.
+
 **Hasilnya:**
 ![](assets/7.jpg)
  Memilih Data dari View:
 ```sql
 SELECT * FROM CustOrderEmp;
 ```
+
 **hasilnya:**
 ![](assets/CustomOrder.jpg)
 # 8
@@ -254,6 +262,7 @@ MariaDB [company_faruq]> CREATE VIEW odproductsc
 - **(P.ProductID = od.ProductID)** = data pada kolom ProductID dari tabel **P(products)** harus sama dengan kolom productID dari tabel **od(orderdetails)** agar bisa dimasukkan.
     
 - **Hasilnya** = Tabel virtual yang bernama **odProducts** yang terdiri dari kolom-kolom yang diambil dari 2 tabel **orderdetails** dan **products**.
+
 **HASILNYA:**
 ![](assets/odproduct.jpg)
 **SQL untuk Menampilkan Data dari _View_ `odproductsc`:**
@@ -300,6 +309,7 @@ MariaDB [company_faruq]> SELECT c.CustomerID, c.CompanyName, o.OrderID, od.Produ
 - **ORDER BY c.customerID** = untuk mengurut data berdasarkan kolom customerID dari tabel **c(customers)**.
     
 - **Hasil** = akan tampil hasil pembulatan dari kolom-kolom yang telah memenuhi kondisi dari **WHERE**.
+
 **HASILNYA:**
 ![](assets/9.jpg)
 
