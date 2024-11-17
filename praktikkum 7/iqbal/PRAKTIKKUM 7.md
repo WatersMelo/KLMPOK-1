@@ -39,7 +39,7 @@ WHERE c.City = 'London';
 - Hasilnya = Jadi yang tampil adalah kolom OrderID, OrderDate dan CustID dari tabel orders dan kolom CompanyName, ContactName, City, dan Phone dari tabel customers.Jadi hanya barisan data yang kolom city dari tabel customers memenuhi data "London" yang bisa tampil. 
 
 Hasilnya: 
-![[asset/Screenshot (98).png]]
+![](asset/Screenshot(98).png)
 
 # 3
 Query Sql 
@@ -60,7 +60,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - Hasilnya = Yang tampil adalah kolom yang memenuhi semua kondisi dari WHERE. 
 
 Hasilnya:
-![[asset/Screenshot (99).png]]
+![](asset/Screenshot(99).png)
 
 # 4 
 Query Sql
@@ -83,7 +83,7 @@ Query Sql
 - Hasilnya = Jadi barisan data yang sudah memenuhi kondisi WHERE akan tampil, terutama kolom FirstName dari tabel employees yang isinya "Margaret".
 
 hasilnya : 
-![[asset/Screenshot (100).png]]
+![](asset/Screenshot(100).png)
 
 # 5
 Query Sql
@@ -107,7 +107,7 @@ SELECT c.CustomerID, c.CompanyName, o.OrderID, o.OrderDate, od.ProductID, p.Prod
 - Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisikondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.
 
 hasilnya : 
-![[asset/Screenshot (101).png]]
+![](asset/Screenshot(101).png)
 
 # 6
 Query Sql
@@ -135,7 +135,7 @@ SELECT c.CustomerID, c.CompanyName, CONCAT(e.LastName, ', ', e.FirstName) AS Emp
 - Hasilnya = kolom LastName dan FirstName dari tabel E(employees) digabung dengan concat dan hasil kolomnya namanya diubah sementara jadi EmployeeName.
 
 hasilnya : 
-![[asset/Screenshot (102).png]]
+![](asset/Screenshot(102).png)
 
 # 7. Creating a View ( CustOrderEmp )
 Query Sql: 
@@ -159,7 +159,7 @@ Query Sql:
 - Hasilnya = sebuah tabel virtual telah dibuat dengan nama custorderEmp yang berisi kolom-kolom dari 3 tabel customers, orders, employees dan telah memenuhi semua kondisi.
 
 hasilnya : 
-![[asset/Screenshot (78).png]]
+![](asset/Screenshot(78).png)
 
 # 8
 ~~~sql
@@ -176,12 +176,12 @@ hasilnya :
  - Hasilnya = Tabel virtual yang bernama odProducts yang terdiri dari kolom-kolom yang diambil dari 2 tabel orderdetails dan products.
  
  HASILNYA:
- ![[asset/Screenshot (80).png]]
+ ![](asset/Screenshot(80).png)
 ## SQL untuk Menampilkan Data dari View odproductsc : 
 ~~~sql
 `SELECT * FROM odproductsc;`
 ~~~
-![[Screenshot (103).png]]
+![](asset/Screenshot(103).png)
 
 # 9
 *QUERY SQL:*
@@ -208,7 +208,7 @@ MariaDB [pegawai]> SELECT c.CustomerID, c.CompanyName, o.OrderID, od.ProductID,
 - Hasil = akan tampil hasil pembulatan dari kolom-kolom yang telah memenuhi kondisi dari WHERE.
 
 HASILNYA:
-![[asset/Screenshot (83).png]]
+![](asset/Screenshot(83).png)
 
 # 10
 *QUERY SQL:*
@@ -233,4 +233,4 @@ MariaDB [pegawai]> SELECT c.customerid, c.companyname, ROUND(SUM((1-od.discount)
 - hasilnya = jadi, kolom yang dikelompokkan adalah customerID dan companyName dan tabel diurutkan berdasarkan kolom customerID
 
 hasilnya : 
-![[asset/Screenshot (84).png]]
+![](asset/Screenshot(84).png)
