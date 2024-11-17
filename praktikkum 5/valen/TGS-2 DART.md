@@ -5,9 +5,9 @@
 *Penjelasan* : Dalam MySQL, DESC adalah singkatan dari "DESCRIBE". Perintah DESCRIBE digunakan untuk menampilkan struktur dari tabel yang ada dalam database. Dengan menggunakan DESCRIBE, Anda bisa mendapatkan informasi mengenai kolom-kolom dalam tabel, termasuk nama kolom, tipe data, apakah kolom tersebut dapat bernilai NULL atau tidak, dan atribut lainnya seperti kunci primer (primary key) atau default value.
 
 **Contoh :
-~~~sql
+```sql
 desc pegawai;
-~~~
+```
 
 
 ***Hasilnya* :**
@@ -21,9 +21,9 @@ Secara keseluruhan, tabel pegawai dirancang dengan kolom id sebagai identifikasi
 *Penjelasan :* Perintah SELECT dalam MySQL digunakan untuk mengambil data dari tabel dalam database. Ini adalah perintah dasar dan paling sering digunakan dalam SQL untuk menampilkan data. Anda bisa menggunakan SELECT untuk memilih kolom tertentu, menggabungkan tabel, melakukan filter data, dan banyak lagi.
 
 *Contoh :*
-~~~sql
+```sql
 select * from pegawai;
-~~~
+```
 
 
 ***Hasil :***
@@ -36,9 +36,9 @@ Perintah SELECT * FROM pegawai; berguna untuk melihat seluruh data dalam tabel p
 *penjelasan:* Perintah COUNT dalam MySQL digunakan untuk menghitung jumlah baris dalam suatu tabel yang memenuhi kriteria tertentu. Ini adalah fungsi agregat yang sangat umum digunakan dalam query SQL untuk memperoleh informasi statistik tentang data dalam tabel.
 
 *Contoh:* 
-~~~sql
+```sql
 SELECT COUNT(NIP) AS jumlahpegawai, COUNT(Jabatan) AS jumlahJabatan FROM pegawai;
-~~~
+```
 
 
 ***Hasil:***
@@ -57,11 +57,11 @@ SELECT COUNT(NIP) AS jumlahpegawai, COUNT(Jabatan) AS jumlahJabatan FROM pegawai
 *penjelasan:* Queri SQL yang Anda berikan akan menghitung jumlah karyawan ( NIP) dalam pegawai`tabel yang termasuk dalam cabang atau departemen tertentu yang diidentifikasi oleh `NoCab = 'C102'.
 
 *contoh:* 
-~~~sql
+```sql
 SELECT COUNT(NIP) AS jumlahpegawai
 -> FROM pegawai
 -> WHERE NoCab = 'C102';
-~~~
+```
 
 
 ***hasil:***
@@ -81,11 +81,11 @@ SELECT COUNT(NIP) AS jumlahpegawai
 *penjelasan:* SELECT NoCab, COUNT(NIP) AS jumlah_pegawai:
 
 *contoh:*
-~~~sql
+```sql
 SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
     -> FROM pegawai
     -> GROUP BY NoCab;
-    ~~~
+```
 
 
 ***hasil:***
@@ -107,11 +107,11 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 ![](Capture15.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai
     -> FROM pegawai
     -> GROUP BY NoCab HAVING COUNT(NIP) >= 3;
-~~~
+```
 
 
 PENJELASAN : 
@@ -135,10 +135,10 @@ PENJELASAN :
 ![](Capture4.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT SUM(Gaji) AS Total_Gaji
     -> FROM pegawai;
-~~~
+```
 
 
 PENJELASAN : 
@@ -154,11 +154,11 @@ PENJELASAN :
 ![](Capture5.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT SUM(Gaji) AS Gaji_Manager
     -> FROM pegawai
     -> WHERE Jabatan = "Manajer";
-    ~~~
+  ```
     
 
 PENJELASAN : 
@@ -177,11 +177,11 @@ PENJELASAN :
 ![](Capture6.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, SUM(Gaji) AS TotalGaji
     -> FROM pegawai
     -> GROUP BY NoCab;
-    ~~~
+  ```
     
 
 PENJELASAN : 
@@ -201,11 +201,11 @@ PENJELASAN :
 ![](Capture7.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, SUM(Gaji) AS Total_Gaji
     -> FROM pegawai
     -> GROUP BY NoCab HAVING SUM(Gaji) >= 8000000;
-    ~~~
+```
     
 
 PENJELASAN : 
@@ -229,10 +229,10 @@ PENJELASAN :
 ![](Capture8.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT AVG(Gaji) AS Rata_rata
     -> FROM pegawai;
-    ~~~
+    ```
     
 
 PENJELASAN : 
@@ -247,11 +247,11 @@ PENJELASAN :
 ![](Capture9.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT AVG(Gaji) AS GajiRataMgr
     FROM pegawai
     WHERE Jabatan = 'Manajer';
-    ~~~
+    ```
     
 
 PENJELASAN : 
@@ -270,11 +270,11 @@ PENJELASAN :
 ![](Capture10.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, AVG(Gaji) AS RataGaji
     FROM pegawai
     GROUP BY NoCab;
-    ~~~
+```
     
 
 PENJELASAN : 
@@ -294,11 +294,12 @@ PENJELASAN :
 ![](Capture11.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, AVG(Gaji) AS RataGaji
     FROM pegawai
     GROUP BY NoCab HAVING NoCab = 'C101' OR NoCab = 'C102';
-~~~
+```
+
 
 
 PENJELASAN : 
@@ -322,10 +323,10 @@ PENJELASAN :
 ![](Capture12.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     FROM pegawai;
-~~~
+```
 
 
 PENJELASAN : 
@@ -340,11 +341,12 @@ PENJELASAN :
 ![](Capture13.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT Max(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     FROM pegawai
     WHERE jabatan = 'manajer';
-~~~
+```
+
 
 
 PENJELASAN : 
@@ -364,11 +366,12 @@ PENJELASAN :
 ![](Capture14.png)
 
 *contoh:*
-~~~sql
+```sql
 SELECT NoCab, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     -> FROM pegawai
     -> GROUP BY NoCab;
-~~~
+```
+
 
 
 *penjelasan:*
@@ -383,11 +386,12 @@ SELECT NoCab, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
 ![](Capture151.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT NoCab, Max(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
     FROM pegawai
     GROUP BY NoCab HAVING COUNT(NIP) >= 3;
-~~~
+```
+
 
 PENJELASAN : 
 - SELECT NoCab, Max(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil:
@@ -408,11 +412,12 @@ PENJELASAN :
 ![](Capture16.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT COUNT(NIP) AS JumlahPegawai, SUM(Gaji) AS TotalGaji,
     AVG(Gaji) AS RataGaji, MAX(Gaji) AS GajiMaks, MIN(Gaji) AS GajiMin
     FROM pegawai;
-~~~
+```
+
 
 
 PENJELASAN : 
@@ -438,13 +443,13 @@ PENJELASAN :
 ![](Capture17.png)
 
 STRIKTUR :
-~~~sql
+```sql
 SELECT COUNT(NIP) AS Jumlahpegawai, SUM(Gaji) AS TotalGaji,
     AVG(Gaji) AS RataGaji, Max(Gaji) AS GajiMks, MIN(Gaji) AS GajiMin
     FROM pegawai
     WHERE Jabatan = 'Staff' OR Jabatan = 'Sales'
     GROUP BY NoCab HAVING SUM(Gaji) <= 2600000;
-~~~
+```
 
 PENJELASAN : 
 - SELECT COUNT(NIP) AS Jumlahpegawai:
