@@ -200,15 +200,13 @@ PENJELASAN :
 **GAMBAR :** 
 ![](asset/Capture7.png)
 
-STRIKTUR :
+**STRIKTUR :**
 ```sql
 SELECT NoCab, SUM(Gaji) AS Total_Gaji
     -> FROM pegawai
     -> GROUP BY NoCab HAVING SUM(Gaji) >= 8000000;
 ```
-    
-
-PENJELASAN : 
+**PENJELASAN :** 
 - SELECT NoCab, SUM(Gaji) AS Total_Gaji:
     - NoCab: Memilih kolom NoCab, yang biasanya menunjukkan kode cabang tempat pegawai bekerja.
     - SUM(Gaji): Menghitung jumlah total dari nilai-nilai dalam kolom Gaji. Fungsi agregat SUM() digunakan untuk menjumlahkan gaji dari semua pegawai dalam setiap cabang.
@@ -228,14 +226,12 @@ PENJELASAN :
 **GAMBAR :** 
 ![](asset/Capture8.png)
 
-STRIKTUR :
+**STRIKTUR :**
 ```sql
 SELECT AVG(Gaji) AS Rata_rata
     -> FROM pegawai;
-    ```
-    
-
-PENJELASAN : 
+```
+**PENJELASAN :** 
 - SELECT AVG(Gaji) AS Rata_rata:
     - AVG(Gaji): Menghitung rata-rata dari nilai-nilai dalam kolom Gaji. Fungsi agregat AVG() digunakan untuk menghitung nilai rata-rata dari kolom tersebut.
     - AS Rata_rata: Memberikan alias Rata_rata pada hasil perhitungan ini. Alias ini akan digunakan sebagai nama kolom dalam hasil query, memberikan deskripsi yang jelas bahwa nilai tersebut adalah rata-rata gaji.
@@ -246,15 +242,13 @@ PENJELASAN :
 **GAMBAR :** 
 ![](asset/Capture9.png)
 
-STRIKTUR :
+**STRIKTUR :**
 ```sql
 SELECT AVG(Gaji) AS GajiRataMgr
     FROM pegawai
     WHERE Jabatan = 'Manajer';
-    ```
-    
-
-PENJELASAN : 
+ ```
+**PENJELASAN :** 
 - SELECT AVG(Gaji) AS GajiRataMgr:
     - AVG(Gaji): Menghitung rata-rata nilai dari kolom Gaji. Fungsi agregat AVG() digunakan untuk menghitung nilai rata-rata gaji.
     - AS GajiRataMgr: Memberikan alias GajiRataMgr pada hasil perhitungan ini. Alias ini akan digunakan sebagai nama kolom dalam hasil query, memberikan deskripsi yang jelas bahwa nilai tersebut adalah rata-rata gaji untuk jabatan 'Manager'.
@@ -269,14 +263,12 @@ PENJELASAN :
 **GAMBAR :** 
 ![](asset/Capture10.png)
 
-STRIKTUR :
+**STRIKTUR :**
 ```sql
 SELECT NoCab, AVG(Gaji) AS RataGaji
     FROM pegawai
     GROUP BY NoCab;
 ```
-    
-
 PENJELASAN : 
 - SELECT NoCab, AVG(Gaji) AS RataGaji:
     - SELECT: Digunakan untuk menentukan kolom mana yang ingin ditampilkan dalam hasil query.
