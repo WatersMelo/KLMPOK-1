@@ -9,3 +9,6 @@
 | 4   | VALENTINO        | 3              | membantu mengerjakan ppt dan materi nomor 3          |
 | 5   | IQBAL            | 3              | mengerjakan PPT dan cri materi sebagian              |
 | 6   | MUHAMMAD ARIEL   | 3              | mengerjakan PPT dan cri materi sebagian              |
+|     |                  |                |                                                      |
+|     |                  |                |                                                      |
+|     |                  |                |                                                      |

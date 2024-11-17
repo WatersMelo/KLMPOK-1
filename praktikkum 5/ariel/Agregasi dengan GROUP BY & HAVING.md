@@ -110,6 +110,8 @@ INSERT INTO pegawai (NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab) VA
 ![](Asset/gambar1.jpg)
 
 
+
+
 ## PRAKTIKKUM 5
 **GAMBAR : 
 ![](assets/1.jpg)
