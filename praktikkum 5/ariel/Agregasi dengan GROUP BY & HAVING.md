@@ -113,7 +113,7 @@ INSERT INTO pegawai (NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab) VA
 
 
 ## PRAKTIKKUM 5
-**GAMBAR : 
+**GAMBAR :**
 ![](assets/1.jpg)
 
 *STRIKTUR :*
@@ -129,7 +129,7 @@ SELECT COUNT(NIP) AS JumlahPegawai, COUNT(Jabatan) AS JumlahJabatan FROM pegawai
 - FROM Pegawai = merupakan dari tabel mana datanya yang digunakan Pegawai adalah nama tabel Yang datanya ingin digunakan.
 - Hasilnya = karena ada 9 barisan data, Yang ingin dihitung adalah kolom NIP, Jumlah dari kolom NIP (isi datanya) ada 9, ditampilkan sebagai Jumlah pesawai. Kolom Jabatan Jusa dihitung, akan tetapi ada satu data yang berisi Null (kosong), oleh karena itu hanya ada 8 data ditampilkan sebagai Jumlah Jabatan.
 ## Latihan-2
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/2.jpg)
 
 *STRIKTUR :*
@@ -149,7 +149,7 @@ select count(NIP) AS JumlahPegawai
 - (Nocab = 'C102') = adalah kondisi dari WHERE Yang harus dipenuhi, Jadi hanya barisan data yang memiliki Clo2 di kolom "vocab Yang bisa dihitung. 
 - Hasilnya = Di 9 barisan data Yangaja Pada tabel Pegawai, kita ingin menghitung Jumlah barisan data yang memiliki nilai 'clo₂ Pada kolom "Nocab" nya dengan menggunakan COUNT. Jadi Yang muncul adalah 3 0 barisan data. kita Juga ingin mengubah nama dari kolom hasil Perintah COUNT secara sementara dengan Perintah AS, namanya adalah Jumlah Pegawai.
 ## Latihan-3
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/3.jpg)
 
 *STRIKTUR :*
@@ -169,7 +169,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
 - GROUP BY untuk mengelompokkan data berdasarkan nilai data yang telah ditentuka Pada kolom Yang dipilih. Nocab hama kolom Yang dipilih untuk datanya dikelompokkan. 
 - Hasilnya = Berdasarkan. 9 barisan data, masing-masing. nilai, dalam kolom Nocab
 ## Latihan-4
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/4.jpg)
 
 *STRIKTUR :*
@@ -197,7 +197,7 @@ GROUP BY untuk menjelompokkan data berdasarkan nilai data Yang telah ditentukan 
 - (Nocab = 'C102') = adalah kordisi dari WHERE Yang harus dipenuhi, Jadi hanya barisan data yang memiliki Clo2' di kolom "vocab" Yang bisa dihitung.
 - Hasilnya Di 9 barisan data Yangada Pada tabel Pesawai, kita ingin menghitung Jumlah barisan data Yang memiliki nilai 'clo2' Pada kolom "Nocab" nya dengan menggunakan COUNT. Jadi Yang muncul adalah 3 barisan data. kita Juda ingin mengubah nama dari kolom hasil Perintah COUNT Secara sementara dengan Perintah As, namanya adalah Jumlah Pegawai.
 ## Latihan-5
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/5.jpg)
 
 *STRIKTUR :*
@@ -224,7 +224,7 @@ SELECT NoCab, COUNT(NIP) AS Jumlah_pegawai
     - *COUNT(NIP) >= 3*: Menyaring kelompok cabang yang memiliki jumlah pegawai lebih dari atau sama dengan tiga. Hanya cabang-cabang yang memenuhi kondisi ini yang akan ditampilkan dalam hasil query.
 
 ## Latihan-6
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/6.jpg)
 
 STRIKTUR :**
@@ -241,7 +241,7 @@ SELECT SUM(Gaji) AS Total_Gaji
 - *FROM pegawai*:
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ##  Latihan-7
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/7.jpg)
 
 STRIKTUR :**
@@ -262,7 +262,7 @@ SELECT SUM(Gaji) AS Gaji_Manager
 - *WHERE Jabatan = 'Manager'*:
     - Menetapkan kondisi filter untuk query. Hanya baris yang memiliki nilai Jabatan sama dengan 'Manager' yang akan dihitung. Dengan kata lain, hanya pegawai dengan jabatan 'Manager' yang akan dihitung total gajinya.
 ## Latihan-8
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/9.jpg)
 
 STRIKTUR :**
@@ -284,7 +284,7 @@ ELECT NoCab, SUM(Gaji) AS TotalGaji
 - *GROUP BY NoCab*:
     - Mengelompokkan hasil berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa perhitungan SUM(Gaji) dilakukan secara terpisah untuk setiap nilai unik di kolom NoCab, yaitu setiap cabang.
 ## Latihan-9
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/10.jpg)
 
 STRIKTUR :**
@@ -311,7 +311,7 @@ SELECT NoCab, SUM(Gaji) AS Total_Gaji
     - *HAVING*: Digunakan untuk menetapkan kondisi pada kelompok data setelah pengelompokan dilakukan. Ini berbeda dari WHERE yang berlaku sebelum pengelompokan.
     - *SUM(Gaji) >= 8000000*: Menyaring hasil agar hanya cabang-cabang yang memiliki total gaji 8.000.000 atau lebih yang ditampilkan.
 ## Latihan-10
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/11.jpg)
 
 STRIKTUR :**
@@ -328,7 +328,7 @@ SELECT AVG(Gaji) AS Rata_rata
 - *FROM pegawai*:
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## Latihan-11
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/12.jpg)
 
 STRIKTUR :**
@@ -350,7 +350,7 @@ SELECT AVG(Gaji) AS GajiRataMgr
     - Menetapkan kondisi filter sehingga hanya pegawai yang memiliki nilai Jabatan sama dengan 'Manager' yang dihitung. Ini berarti hanya gaji dari pegawai dengan jabatan 'Manager' yang akan dimasukkan dalam perhitungan rata-rata.
 
 ## Latiahn-12
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/13.jpg)
 
 STRIKTUR :**
@@ -371,7 +371,7 @@ SELECT NoCab, AVG(Gaji) AS RataGaji
 - GROUP BY : Digunakan untuk mengelompokkan baris-baris yang memiliki nilai kolom yang sama. Dalam hal ini, data akan dikelompokkan berdasarkan kolom NoCab . Setiap grup berisi baris-baris dengan nilai NoCab yang sama.
 - Setelah pengelompokan, fungsi agregat (seperti AVG ) diterapkan pada setiap grup.
 ## Latiahn-13
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/14.jpg)
 
 STRIKTUR :**
@@ -395,7 +395,7 @@ HAVING adalah klausul yang digunakan untuk memfilter hasil setelah pengelompokan
 - Dalam konteks ini, HAVING membatasi hasil query hanya pada grup-grup di man NoCab adalah 'C101' atau 'C102'.
 - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## Latiahn-14
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/15.jpg)
 
 STRIKTUR :**
@@ -414,7 +414,7 @@ Fungsi MIN digunakan untuk mencari nilai minimum dari kolom Gaji . Fungsi ini ak
 FROM pegawai : Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal
 ini, data diambil dari tabel pegawai
 ## Latiahn-15
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/16.jpg)
 
 STRIKTUR :**
@@ -439,7 +439,7 @@ GROUP BY NoCab : Bagian ini mengelompokkan hasil berdasarkan kolom NoCab .
 Artinya, data akan dikelompokkan berdasarkan nomor cabang, dan untuk setiap
 cabang, fungsi MAX dan MIN akan diterapkan pada kolom Gaji .
 ## Latiahn-16
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/17.jpg)
 
 STRIKTUR :**
@@ -468,7 +468,7 @@ tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung
 berdasarkan NIP , yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih
 yang akan dimasukkan dalam hasil.
 ## Latiahn-17
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/18.jpg)
 
 STRIKTUR :**
@@ -501,7 +501,7 @@ Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai .
 Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan
 berdasarkan data yang ada di tabel ini.
 ## Latiahn-18
-**GAMBAR : 
+**GAMBAR :** 
 ![](assets/19.jpg)
 
 STRIKTUR :**

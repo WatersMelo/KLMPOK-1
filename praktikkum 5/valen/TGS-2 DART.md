@@ -10,8 +10,8 @@ desc pegawai;
 ~~~
 
 
-*Hasilnya* :
-![[Capture 100.png]]
+***Hasilnya* :**
+![](Capture100.png)
 
 *Kesimpulan :*
 
@@ -26,7 +26,7 @@ select * from pegawai;
 ~~~
 
 
-*Hasil :*
+***Hasil :***
 ![](asset/Capture200.png)
 
 *Kesimpulan :*
@@ -41,8 +41,8 @@ SELECT COUNT(NIP) AS jumlahpegawai, COUNT(Jabatan) AS jumlahJabatan FROM pegawai
 ~~~
 
 
-*Hasil:*
-![[Capture 1.png]]
+***Hasil:***
+![](Capture1.png)
 
 *Analisis:*
 - SELECT = untuk memilih kolom apa saja yang ingin dipilih (untuk dihitung). 
@@ -64,8 +64,8 @@ SELECT COUNT(NIP) AS jumlahpegawai
 ~~~
 
 
-*hasil:*
-![[Capture 2.png]]
+***hasil:***
+![](Capture2.png)
 
 *analisis:*
 - SELECT= untuk memilih kolom mana saja yang di ingin dipilih untuk dihitung.
@@ -88,8 +88,8 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
     ~~~
 
 
-*hasil:*
-![[Capture 3.png]]
+***hasil:***
+![](Capture3.png)
 
 *analisis:*
 - SELECT= untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan.
@@ -103,8 +103,8 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 *hasilnya:* berdasarkan 9 barisan data, masing-masing nilai dalam kolom NoCab dikelompokkan berdasarkan nilainya sendiri. jadi NoCab C101 bersama NoCab yang nilainya sama yaitu C101. jadi NoCab yang memiliki C101 ada 2, C102 ada 3, C103 ada 2, C104 ada 2. total semuanya 9, sesuai dengan jumlah data yang ada. adapun nama dari kolom hasil yaitu jumlah_pegawai dari perintah AS. 
 
 ## 4.
-**GAMBAR : 
-![[Capture 15.png]]
+**GAMBAR :** 
+![](Capture15.png)
 
 STRIKTUR :
 ~~~sql
@@ -131,8 +131,8 @@ PENJELASAN :
     - COUNT(NIP) >= 3: Menyaring kelompok cabang yang memiliki jumlah pegawai lebih dari atau sama dengan tiga. Hanya cabang-cabang yang memenuhi kondisi ini yang akan ditampilkan dalam hasil query.
 
 ## 5.
-**GAMBAR : 
-![[Capture 4.png]]
+**GAMBAR :** 
+![](Capture4.png)
 
 STRIKTUR :
 ~~~sql
@@ -150,8 +150,8 @@ PENJELASAN :
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 
 ## 6.
-**GAMBAR : 
-![[Capture 5.png]]
+**GAMBAR :** 
+![](Capture5.png)
 
 STRIKTUR :
 ~~~sql
@@ -173,8 +173,8 @@ PENJELASAN :
     - Menetapkan kondisi filter untuk query. Hanya baris yang memiliki nilai Jabatan sama dengan 'Manager' yang akan dihitung. Dengan kata lain, hanya pegawai dengan jabatan 'Manager' yang akan dihitung total gajinya.
 
 ## 7.
-**GAMBAR : 
-![[Capture 6.png]]
+**GAMBAR :** 
+![](Capture6.png)
 
 STRIKTUR :
 ~~~sql
@@ -197,8 +197,8 @@ PENJELASAN :
     - Mengelompokkan hasil berdasarkan nilai dalam kolom NoCab. Ini memastikan bahwa perhitungan SUM(Gaji) dilakukan secara terpisah untuk setiap nilai unik di kolom NoCab, yaitu setiap cabang.
 
 ## 8.
-**GAMBAR : 
-![[Capture 7.png]]
+**GAMBAR :** 
+![](Capture7.png)
 
 STRIKTUR :
 ~~~sql
@@ -225,8 +225,8 @@ PENJELASAN :
     - SUM(Gaji) >= 8000000: Menyaring hasil agar hanya cabang-cabang yang memiliki total gaji 8.000.000 atau lebih yang ditampilkan.
 
 ## 9.
-**GAMBAR : 
-![[Capture 8.png]]
+**GAMBAR :** 
+![](Capture8.png)
 
 STRIKTUR :
 ~~~sql
@@ -243,8 +243,8 @@ PENJELASAN :
 - FROM pegawai:
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## 10.
-**GAMBAR : 
-![[Capture 9.png]]
+**GAMBAR :** 
+![](Capture9.png)
 
 STRIKTUR :
 ~~~sql
@@ -266,8 +266,8 @@ PENJELASAN :
     - Menetapkan kondisi filter sehingga hanya pegawai yang memiliki nilai Jabatan sama dengan 'Manager' yang dihitung. Ini berarti hanya gaji dari pegawai dengan jabatan 'Manager' yang akan dimasukkan dalam perhitungan rata-rata.
 
 ## 11.
-**GAMBAR : 
-![[Capture 10.png]]
+**GAMBAR :** 
+![](Capture10.png)
 
 STRIKTUR :
 ~~~sql
@@ -290,8 +290,8 @@ PENJELASAN :
     - GROUP BY: Digunakan untuk mengelompokkan baris-baris yang memiliki nilai kolom yang sama. Dalam hal ini, data akan dikelompokkan berdasarkan kolom NoCab. Setiap grup berisi baris-baris dengan nilai NoCab yang sama.
     - Setelah pengelompokan, fungsi agregat (seperti AVG) diterapkan pada setiap grup.
 ## 12.
-**GAMBAR : 
-![[Capture 11.png]]
+**GAMBAR :** 
+![](Capture11.png)
 
 STRIKTUR :
 ~~~sql
@@ -318,8 +318,8 @@ PENJELASAN :
     - Dalam konteks ini, HAVING membatasi hasil query hanya pada grup-grup di mana NoCab adalah 'C101' atau 'C102'.
     - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## 13.
-**GAMBAR : 
-![[Capture 12.png]]
+**GAMBAR :** 
+![](Capture12.png)
 
 STRIKTUR :
 ~~~sql
@@ -336,8 +336,8 @@ PENJELASAN :
 - FROM pegawai:
     - FROM pegawai: Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal ini, data diambil dari tabel pegawai.
 ## 14.
-**GAMBAR : 
-![[Capture 13.png]]
+**GAMBAR :** 
+![](Capture13.png)
 
 STRIKTUR :
 ~~~sql
@@ -360,8 +360,8 @@ PENJELASAN :
     - GROUP BY NoCab: Bagian ini mengelompokkan hasil berdasarkan kolom NoCab. Artinya, data akan dikelompokkan berdasarkan nomor cabang, dan untuk setiap cabang, fungsi MAX dan MIN akan diterapkan pada kolom Gaji.
 
 ## 15.
-*hasil:*
-![[Capture 14.png]]
+***hasil:***
+![](Capture14.png)
 
 *contoh:*
 ~~~sql
@@ -379,8 +379,8 @@ SELECT NoCab, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
 - GROUP BY NoCab: Ini mengelompokkan hasil berdasarkan NoCab`kolom, artinya untuk setiap `NoCab, kueri akan mengembalikan gaji maksimum dan minimum.
 
 ## 16.
-**GAMBAR : 
-![[Capture 15 1.png]]
+**GAMBAR :** 
+![](Capture151.png)
 
 STRIKTUR :
 ~~~sql
@@ -404,8 +404,8 @@ PENJELASAN :
 - HAVING COUNT(NIP) >= 3:
     - HAVING COUNT(NIP) >= 3: Kondisi ini menyaring hasil grup yang memenuhi kriteria tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung berdasarkan NIP, yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih yang akan dimasukkan dalam hasil.
 ## 17.
-**GAMBAR : 
-![[Capture 16.png]]
+**GAMBAR :** 
+![](Capture16.png)
 
 STRIKTUR :
 ~~~sql
@@ -434,8 +434,8 @@ PENJELASAN :
 - FROM pegawai:
     - Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## 18.
-**GAMBAR : 
-![[Capture 17.png]]
+**GAMBAR :** 
+![](Capture17.png)
 
 STRIKTUR :
 ~~~sql
