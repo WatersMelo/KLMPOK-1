@@ -10,8 +10,8 @@ desc pegawai;
 ```
 
 
-***Hasilnya* :**
-![](Capture100.png)
+***Hasilnya :**
+![](asset/Capture100.png)
 
 *Kesimpulan :*
 
@@ -42,7 +42,7 @@ SELECT COUNT(NIP) AS jumlahpegawai, COUNT(Jabatan) AS jumlahJabatan FROM pegawai
 
 
 ***Hasil:***
-![](Capture1.png)
+![]((asset/Capture1.png)
 
 *Analisis:*
 - SELECT = untuk memilih kolom apa saja yang ingin dipilih (untuk dihitung). 
@@ -65,7 +65,7 @@ SELECT COUNT(NIP) AS jumlahpegawai
 
 
 ***hasil:***
-![](Capture2.png)
+![](asset/Capture2.png)
 
 *analisis:*
 - SELECT= untuk memilih kolom mana saja yang di ingin dipilih untuk dihitung.
@@ -89,7 +89,7 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 
 
 ***hasil:***
-![](Capture3.png)
+![](asset/Capture3.png)
 
 *analisis:*
 - SELECT= untuk memilih kolom mana saja yang ingin dihitung atau ditampilkan.
@@ -104,7 +104,7 @@ SELECT NoCab,COUNT(NIP) AS jumlah_pegawai
 
 ## 4.
 **GAMBAR :** 
-![](Capture15.png)
+![](asset/Capture15.png)
 
 STRIKTUR :
 ```sql
@@ -132,7 +132,7 @@ PENJELASAN :
 
 ## 5.
 **GAMBAR :** 
-![](Capture4.png)
+![](asset/Capture4.png)
 
 STRIKTUR :
 ```sql
@@ -151,7 +151,7 @@ PENJELASAN :
 
 ## 6.
 **GAMBAR :** 
-![](Capture5.png)
+![](asset/Capture5.png)
 
 STRIKTUR :
 ```sql
@@ -174,7 +174,7 @@ PENJELASAN :
 
 ## 7.
 **GAMBAR :** 
-![](Capture6.png)
+![](asset/Capture6.png)
 
 STRIKTUR :
 ```sql
@@ -198,7 +198,7 @@ PENJELASAN :
 
 ## 8.
 **GAMBAR :** 
-![](Capture7.png)
+![](asset/Capture7.png)
 
 STRIKTUR :
 ```sql
@@ -226,7 +226,7 @@ PENJELASAN :
 
 ## 9.
 **GAMBAR :** 
-![](Capture8.png)
+![](asset/Capture8.png)
 
 STRIKTUR :
 ```sql
@@ -244,7 +244,7 @@ PENJELASAN :
     - Menunjukkan bahwa data yang akan diambil berasal dari tabel pegawai.
 ## 10.
 **GAMBAR :** 
-![](Capture9.png)
+![](asset/Capture9.png)
 
 STRIKTUR :
 ```sql
@@ -267,7 +267,7 @@ PENJELASAN :
 
 ## 11.
 **GAMBAR :** 
-![](Capture10.png)
+![](asset/Capture10.png)
 
 STRIKTUR :
 ```sql
@@ -291,7 +291,7 @@ PENJELASAN :
     - Setelah pengelompokan, fungsi agregat (seperti AVG) diterapkan pada setiap grup.
 ## 12.
 **GAMBAR :** 
-![](Capture11.png)
+![](asset/Capture11.png)
 
 STRIKTUR :
 ```sql
@@ -320,7 +320,7 @@ PENJELASAN :
     - Ini berbeda dari WHERE karena WHERE digunakan sebelum pengelompokan, sedangkan HAVING digunakan setelah pengelompokan.
 ## 13.
 **GAMBAR :** 
-![](Capture12.png)
+![](asset/Capture12.png)
 
 STRIKTUR :
 ```sql
@@ -338,7 +338,7 @@ PENJELASAN :
     - FROM pegawai: Bagian ini menentukan dari tabel mana data akan diambil. Dalam hal ini, data diambil dari tabel pegawai.
 ## 14.
 **GAMBAR :** 
-![](Capture13.png)
+![](asset/Capture13.png)
 
 STRIKTUR :
 ```sql
@@ -363,7 +363,7 @@ PENJELASAN :
 
 ## 15.
 ***hasil:***
-![](Capture14.png)
+![](asset/Capture14.png)
 
 *contoh:*
 ```sql
@@ -383,7 +383,7 @@ SELECT NoCab, MAX(Gaji) AS GajiTerbesar, MIN(Gaji) AS GajiTerkecil
 
 ## 16.
 **GAMBAR :** 
-![](Capture151.png)
+![](asset/Capture151.png)
 
 STRIKTUR :
 ```sql
@@ -409,7 +409,7 @@ PENJELASAN :
     - HAVING COUNT(NIP) >= 3: Kondisi ini menyaring hasil grup yang memenuhi kriteria tertentu. Dalam hal ini, hanya cabang yang memiliki jumlah pegawai (dihitung berdasarkan NIP, yang merupakan Nomor Induk Pegawai) sebanyak tiga atau lebih yang akan dimasukkan dalam hasil.
 ## 17.
 **GAMBAR :** 
-![](Capture16.png)
+![](asset/Capture16.png)
 
 STRIKTUR :
 ```sql
@@ -440,7 +440,7 @@ PENJELASAN :
     - Bagian ini menunjukkan tabel sumber data yang digunakan, yaitu tabel pegawai. Semua operasi perhitungan (COUNT, SUM, AVG, MAX, MIN) akan dilakukan berdasarkan data yang ada di tabel ini.
 ## 18.
 **GAMBAR :** 
-![](Capture17.png)
+![](asset/Capture17.png)
 
 STRIKTUR :
 ```sql
