@@ -234,3 +234,8 @@ MariaDB [pegawai]> SELECT c.customerid, c.companyname, ROUND(SUM((1-od.discount)
 
 hasilnya : 
 ![](asset/Screenshot(84).png)
+
+
+# TABEL KESELURUHAN 
+
+![](asset/iqbaldo.jpg)

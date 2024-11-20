@@ -91,7 +91,7 @@ WHERE o.CustomerID = c.CustomerID AND o.EmpID = e.EmpID;
 - **(e.FirstName = "Margaret")** = data pada kolom FirstName dalam tabel e(employees) harus berisi data "Margaret" agar bisa tampil.
 - **Hasilnya** = Jadi barisan data yang sudah memenuhi kondisi WHERE akan tampil, terutama kolom FirstName dari tabel employees yang isinya "Margaret".
 **Hasilnya:**
-![](ASEET/COAK.png)
+![](ASEET/COAK..png)
 # 5
 **Query Sql:**
 ```SQL
@@ -104,35 +104,21 @@ SELECT c.CustomerID, c.CompanyName, o.OrderID,
      ORDER BY c.CustomerID;
 ```
 **Penjelasan:**
-- **SELECT = untuk memilih kolom mana saja yang ingin ditampilkan dari dari tabel mana kolom tersebut diambil.**
-
-- **C.CustomerID, C.CompanyName = kolom CustomerID dan CompanyName dari tabel C (customers) dipilih untuk ditampilkan.**
-
-- **O.OrderID, O.OrderDate = kolom OrderID dan OrderDate dari tabel O (orders) dipilih untuk ditampilkan.**
-
-- **od.ProductID, od.Quantity, od.UnitPrice = kolom ProductID, Quantity dan UnitPrice dari tabel od (orderdetails) dipilih untuk ditampilkan.**
-
-- **P.ProductName = kolom ProductName merupakan kolom dari tabel P (Products) yang dipilih untuk ditampilkan.**
-
-- **od.Quantity AS Qty = kolom Quantity ditampilkan sebagai nama sementaranya yaitu Qty. AS untuk mengubah nama suatu kolom secara sementara.**
-
-- **FROM customers C, orders O, orderdetails od, products P = untuk memilih dari tabel mana saja yang kolomnya dipilih untuk ditampilkan. Customers atau C adalah nama tabel yang dipilih untuk ditampilkan. Orders atau O adalah nama tabel yang dipilih untuk ditampilkan. Orderdetails atau od adalah nama tabel yang dipilih untuk ditampilkan. Products atau P adalah nama tabel yang dipilih untuk ditampilkan.**
-
-- **WHERE = kondisi yang harus dipenuhi oleh suatu kolom data agar bisa ditampilkan.**
-
-- **(C.CustomerID = O.CustID) = data pada kolom CustomerID dari tabel customers atau C harus sama dengan data pada kolom CustID dari tabel orders atau O.**
-
-- **AND = untuk menyeleksi dua data atau lebih pada perintah WHERE.**
-
-- **(O.OrderID = od.OrderID) = data pada kolom OrderID dari tabel orders atau O harus sama dengan data pada kolom OrderID dari tabel orderdetails atau od.**
-
-- **AND = untuk menyeleksi dua data atau lebih pada perintah WHERE.**
-
-- **(P.ProductID = od.ProductID) = data pada kolom ProductID dari tabel Products atau P harus sama dengan data pada kolom ProductID dari tabel orderdetails atau od.**
-
-- **ORDER BY C.CustomerID = untuk menurut data berdasarkan kolom CustomerID dari tabel customers.**
-
-- **Hasilnya = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.**
+`SELECT `= untuk memilih kolom mana saja yang ingin ditampilkan dari dari tabel mana kolom tersebut diambil.
+`C.CustomerID, C.CompanyName `= kolom CustomerID dan CompanyName dari tabel C (customers) dipilih untuk ditampilkan.
+`O.OrderID, O.OrderDate `= kolom OrderID dan OrderDate dari tabel O (orders) dipilih untuk ditampilkan.
+``od.ProductID, od.Quantity, od.UnitPrice`` = kolom ProductID, Quantity dan UnitPrice dari tabel od (orderdetails) dipilih untuk ditampilkan.
+`P.ProductName` = kolom ProductName merupakan kolom dari tabel P (Products) yang dipilih untuk ditampilkan.
+`od.Quantity AS Qty` = kolom Quantity ditampilkan sebagai nama sementaranya yaitu Qty. AS untuk mengubah nama suatu kolom secara sementara.
+`FROM customers C, orders O, orderdetails od, products P` = untuk memilih dari tabel mana saja yang kolomnya dipilih untuk ditampilkan. Customers atau C adalah nama tabel yang dipilih untuk ditampilkan. Orders atau O adalah nama tabel yang dipilih untuk ditampilkan. Orderdetails atau od adalah nama tabel yang dipilih untuk ditampilkan. Products atau P adalah nama tabel yang dipilih untuk ditampilkan.
+`WHERE` = kondisi yang harus dipenuhi oleh suatu kolom data agar bisa ditampilkan.
+`(C.CustomerID = O.CustID`) = data pada kolom CustomerID dari tabel customers atau C harus sama dengan data pada kolom CustID dari tabel orders atau O.
+`AND` = untuk menyeleksi dua data atau lebih pada perintah WHERE.
+`(O.OrderID = od.OrderID)` = data pada kolom OrderID dari tabel orders atau O harus sama dengan data pada kolom OrderID dari tabel orderdetails atau od.
+`AND` = untuk menyeleksi dua data atau lebih pada perintah WHERE.
+`(P.ProductID = od.ProductID)` = data pada kolom ProductID dari tabel Products atau P harus sama dengan data pada kolom ProductID dari tabel orderdetails atau od.
+`ORDER BY C.CustomerID` = untuk menurut data berdasarkan kolom CustomerID dari tabel customers.
+**Hasilnya** = kolom-kolom data yang tampil adalah data yang telah memenuhi kondisi-kondisi yang ada, dan seluruh isi data tersebut diurut berdasarkan satu kolom yaitu CustomerID dari tabel customers.
 **Hasilnya:**
 	![](ASEET/CIAK.png)
 # 6
@@ -335,5 +321,7 @@ Query ini digunakan untuk memilih semua data dari _view_ `odproductsc`, yang men
 ![](ASEET/ORDER.jpg)
 
 
+# TABEL KESELURUHAN 
 
+![](ASEET/tabelvalen.jpg)
 

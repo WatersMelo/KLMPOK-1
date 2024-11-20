@@ -1,5 +1,6 @@
 ## 1.membuat database company_indrawan.
-*STRUKTUR "*
+STRUKTUR 
+
 SQL
 ```sql
 CREATE TABLE pegawai (
@@ -16,42 +17,42 @@ Jabatan ENUM('Manager', 'Sales', 'Staff'),
 ```
 
 
+PENJELASAN :
+1. NIP (Nomor Induk Pegawai):
+- Tipe data INT dipilih karena NIP biasanya berupa angka yang dapat direpresentasikan dengan tipe data integer.
+- PRIMARY KEY menunjukkan bahwa kolom NIP adalah kunci utama (primary key) yang unik untuk setiap data pegawai.
 
-*PENJELASAN :*
-1. **NIP (Nomor Induk Pegawai)**:
-    - Tipe data INT dipilih karena NIP biasanya berupa angka yang dapat direpresentasikan dengan tipe data integer.
-    - PRIMARY KEY menunjukkan bahwa kolom NIP adalah kunci utama (primary key) yang unik untuk setiap data pegawai.
-2. **NDep (Nama Departemen)** dan **NBlk (Nama Belakang)**:
-    
-    - Tipe data VARCHAR(255)dipilih karena nama departemen dan nama belakang dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
-    - NOT NULL menunjukkan bahwa kolom NDep dan NBlk harus diisi, karena informasi tersebut dianggap penting untuk data pegawai.
-3. **JK (Jenis Kelamin)**:
-    
-    - Tipe data ENUM('L', 'P') dipilih karena jenis kelamin hanya memiliki dua kemungkinan, yaitu 'Laki-laki' dan 'Perempuan'.
-    - NOT NULL menunjukkan bahwa kolom JK harus diisi, karena informasi jenis kelamin dianggap penting untuk data pegawai.
-4. **Alamat**:
-    - Tipe data TEXT dipilih karena alamat dapat berisi string yang lebih panjang daripada VARCHAR(255)
-    - NOT NULL menunjukkan bahwa kolom Alamat harus diisi, karena informasi tersebut dianggap penting untuk data pegawai.
-5. **Telp (Telepon)**:
-    
-    - Tipe data VARCHAR(255) dipilih karena nomor telepon dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
-    - NOT NULL menunjukkan bahwa kolom Telp harus diisi, karena informasi kontak pegawai dianggap penting.
-6. **Jabatan**:
-    
-    - Tipe data ENUM('Manager', 'sales', 'Staff') dipilih karena jabatan pegawai hanya memiliki tiga kemungkinan.
-    - Tidak ada atribut NOT NULL atau NULL, artinya kolom Jabatan boleh diisi atau dibiarkan kosong.
-7. **Gaji**:
-    
-    - Tipe data BIGINT dipilih karena gaji pegawai dapat berupa angka yang cukup besar.
-    - NOT NULL menunjukkan bahwa kolom Gaji harus diisi, karena informasi gaji dianggap penting untuk data pegawai.
-8. **NoCab (Nomor Cabang)**:
-    
-    - Tipe data VARCHAR(255) dipilih karena nomor cabang dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
-    - NOT NULL menunjukkan bahwa kolom NoCab harus diisi, karena informasi cabang dianggap penting untuk data pegawai.
+2. NDep (Nama Departemen) dan NBlk (Nama Belakang):
+- Tipe data VARCHAR(255)dipilih karena nama departemen dan nama belakang dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
+- NOT NULL menunjukkan bahwa kolom NDep dan NBlk harus diisi, karena informasi tersebut dianggap penting untuk data pegawai.
+
+3. JK (Jenis Kelamin):
+- Tipe data ENUM('L', 'P') dipilih karena jenis kelamin hanya memiliki dua kemungkinan, yaitu 'Laki-laki' dan 'Perempuan'.
+- NOT NULL menunjukkan bahwa kolom JK harus diisi, karena informasi jenis kelamin dianggap penting untuk data pegawai.
+
+4. Alamat:
+- Tipe data TEXT dipilih karena alamat dapat berisi string yang lebih panjang daripada VARCHAR(255)
+- NOT NULL menunjukkan bahwa kolom Alamat harus diisi, karena informasi tersebut dianggap penting untuk data pegawai.
+
+5. Telp (Telepon):
+- Tipe data VARCHAR(255) dipilih karena nomor telepon dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
+- NOT NULL menunjukkan bahwa kolom Telp harus diisi, karena informasi kontak pegawai dianggap penting
+
+6. . Jabatan:
+- Tipe data ENUM('Manager', 'sales', 'Staff') dipilih karena jabatan pegawai hanya memiliki tiga kemungkinan.
+- Tidak ada atribut NOT NULL atau NULL, artinya kolom Jabatan boleh diisi atau dibiarkan kosong.
+
+7. Gaji:
+- Tipe data BIGINT dipilih karena gaji pegawai dapat berupa angka yang cukup besar.
+- NOT NULL menunjukkan bahwa kolom Gaji harus diisi, karena informasi gaji dianggap penting untuk data pegawai.
+
+8. NoCab (Nomor Cabang):
+- Tipe data VARCHAR(255) dipilih karena nomor cabang dapat berupa string yang panjangnya bervariasi, namun tidak melebihi 255 karakter.
+- NOT NULL menunjukkan bahwa kolom NoCab harus diisi, karena informasi cabang dianggap penting untuk data pegawai.
 
 Secara umum, penggunaan tipe data dan atribut NOT NULL atau NULL pada tabel pegawai ini dimaksudkan untuk menjaga integritas dan konsistensi data, serta memastikan bahwa informasi yang dianggap penting untuk data pegawai selalu tersedia.
 
-*HASIL :*
+HASIL :
 ![](assett/database.png)
 
 
@@ -74,39 +75,37 @@ INSERT INTO pegawai (NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab) VA
 
 *PENJELASAN :*
 - *INSERT INTO pegawai*:
-    - Menunjukkan bahwa Anda akan menambahkan data ke tabel bernama pegawai.
-    
+- Menunjukkan bahwa Anda akan menambahkan data ke tabel bernama pegawai.
 - *(NIP, NDep, NBlk, JK, Alamat, Telp, Jabatan, Gaji, NoCab)*:
-    - Ini adalah daftar kolom dalam tabel pegawai yang akan diisi dengan data. Kolom-kolom ini adalah:
-        - NIP (Nomor Induk Pegawai)
-        - NDep (Nama Depan)
-        - NBlk (Nama Belakang)
-        - JK (Jenis Kelamin)
-    - Alamat (Alamat)
-        - Telp (Telepon)
-        - Jabatan (Jabatan)
-        - Gaji (Gaji)
-        - NoCab (Nomor Cabang)
-   
+- Ini adalah daftar kolom dalam tabel pegawai yang akan diisi dengan data. Kolom-kolom ini adalah:
+- NIP (Nomor Induk Pegawai)
+- NDep (Nama Depan)
+- NBlk (Nama Belakang)
+- JK (Jenis Kelamin)
+- Alamat (Alamat)
+- Telp (Telepon)
+- Jabatan (Jabatan)
+- Gaji (Gaji)
+- NoCab (Nomor Cabang)
+
 - *VALUES*:
-    - Menunjukkan data yang akan dimasukkan ke dalam tabel. Data untuk setiap baris harus sesuai dengan urutan kolom yang disebutkan sebelumnya.
-    
+- Menunjukkan data yang akan dimasukkan ke dalam tabel. Data untuk setiap baris harus sesuai dengan urutan kolom yang disebutkan sebelumnya.
 - *Data yang Dimasukkan*:
-    - Baris pertama:
-        - NIP: 10107
-        - NDep: 'Emya'
-        - NBlk: 'Salsalina'
-        - JK: 'P' (Perempuan)
-        - Alamat: 'JL. Suci 78 Bandung'
-        - Telp: '022-555768'
-        - Jabatan: 'Manager'
-        - Gaji: 5250000
-        - NoCab: 'C101'
-    - Baris kedua dan seterusnya mengikuti pola yang sama, dengan data yang berbeda.
-    
+- Baris pertama:
+- NIP: 10107
+- NDep: 'Emya'
+- NBlk: 'Salsalina'
+- JK: 'P' (Perempuan)
+- Alamat: 'JL. Suci 78 Bandung'
+- Telp: '022-555768'
+- Jabatan: 'Manager'
+- Gaji: 5250000
+- NoCab: 'C101'
+
+- - Baris kedua dan seterusnya mengikuti pola yang sama, dengan data yang berbeda.
 - *Catatan*:
-    - Pada baris 10415 untuk Susan Sumantri, kolom Jabatan tidak diisi (''), yang bisa menyebabkan masalah jika kolom Jabatan adalah ENUM dan tidak termasuk nilai kosong. Pastikan kolom Jabatan memiliki nilai yang valid.
-    - Jika ada nilai kosong ('') dalam kolom Jabatan, Anda mungkin ingin memperbarui baris ini dengan jabatan yang sesuai, seperti 'Staff', atau menyesuaikan schema tabel untuk mengizinkan nilai kosong jika perlu.
+- Pada baris 10415 untuk Susan Sumantri, kolom Jabatan tidak diisi (''), yang bisa menyebabkan masalah jika kolom Jabatan adalah ENUM dan tidak termasuk nilai kosong. Pastikan kolom Jabatan memiliki nilai yang valid.
+- Jika ada nilai kosong ('') dalam kolom Jabatan, Anda mungkin ingin memperbarui baris ini dengan jabatan yang sesuai, seperti 'Staff', atau menyesuaikan schema tabel untuk mengizinkan nilai kosong jika perlu.
 
 *HASIL :*
 ![](assett/pegawai.png)
@@ -476,3 +475,6 @@ AS Jumlahpegawai, SUM(Gaji) AS Totalgaji,
 ### HASIL:
 ![](assett/nipgajitotalgaji260.png)
 
+# TABEL KESELURUHAN PADA PRAKTIK
+
+![](assett/tbelwan.jpg)

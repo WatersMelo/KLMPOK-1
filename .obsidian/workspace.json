@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8eb2b33a0f4cf230",
+        "id": "189b6ef3669def10",
         "type": "tabs",
         "children": [
           {
-            "id": "2e1555a4af9a3674",
+            "id": "0c51660aacdd0a85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "praktikkum 7/VALEN/CATATAN TABEL VALEN.md",
+                "file": "praktikkum 7/wawan/praktikum 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CATATAN TABEL VALEN"
-            }
-          },
-          {
-            "id": "a9ad6ab907089d0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Agregasi dengan GROUP BY & HAVING"
+              "title": "praktikum 7"
             }
           }
         ]
@@ -176,52 +162,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e1555a4af9a3674",
+  "active": "0c51660aacdd0a85",
   "lastOpenFiles": [
-    "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
+    "praktikkum 7/wawan/assett/tbelwan.jpg",
     "praktikkum 7/VALEN/CATATAN TABEL VALEN.md",
-    "praktikkum 5/valen/TGS-2 DART.md",
-    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
-    "praktikkum 5/iqbal/Basis data iqbal.md",
+    "praktikkum 7/VALEN/ASEET/tabelvalen.jpg",
+    "praktikkum 7/RIVALDO/CATATAN TABEL - PRAKTIKKUM 7.md",
+    "praktikkum 7/RIVALDO/Assets/tabeldo.jpg",
+    "praktikkum 7/iqbal/PRAKTIKKUM 7.md",
+    "praktikkum 7/iqbal/asset/iqbaldo.jpg",
     "praktikkum 7/faruq/CATATAN TABEL - PRAKTIKKUM 7.md",
+    "praktikkum 7/faruq/assets/Capture.PNG",
+    "praktikkum 7/ariel/catatan aril.md",
+    "praktikkum 7/ariel/assets/tabelriel.jpg",
+    "praktikkum 7/wawan/praktikum 7.md",
+    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.pdf",
+    "praktikkum 5/wawan/basis_data_xii.md",
+    "praktikkum 5/wawan/assett/tbelwan.jpg",
+    "praktikkum 5/faruq/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 5/wawan/basis data xii.pdf",
+    "praktikkum 5/valen/TGS-2 DART.md",
+    "praktikkum 5/rivaldo/AGREGASI (GROUP BY & HAVING).md",
+    "praktikkum 5/iqbal/Basis data iqbal.md",
+    "praktikkum 5/valen/asset/tabelvalen.jpg",
+    "praktikkum 5/ariel/tabelvalen.jpg",
+    "praktikkum 5/iqbal/asset/basisdata_XII (4).zip",
+    "praktikkum 5/iqbal/asset/iqbaldo.jpg",
+    "praktikkum 5/rivaldo/Assets/tabeldo.jpg",
     "praktikkum 5/ariel/Agregasi dengan GROUP BY & HAVING.md",
+    "praktikkum 5/wawan/basis data xii.md",
     "KARDINALITAS KANTIN SEKOLAH.md",
     "praktikkum 7/penilaian kelompok/penilaian kelompok.md",
-    "rir.jpg",
     "rir.md",
-    "ror.jpg",
-    "praktikkum 7/RIVALDO/CATATAN TABEL - PRAKTIKKUM 7.md",
     "ERD klp 1 - Copy.pdf",
     "praktikkum 7/RIVALDO/CATATAN TABEL - PRAKTIKKUM 7.pdf",
-    "praktikkum 5/wawan/basis data xii.md",
-    "praktikkum 5/wawan/assett/gajikecildanbesarmanager.png",
-    "praktikkum 5/wawan/assett/gajikecildanbesar.png",
-    "praktikkum 5/wawan/assett/avgratagaji.png",
-    "praktikkum 5/wawan/assett/avggajimaneger.png",
-    "praktikkum 5/wawan/assett/totalgajihavingsum.png",
-    "praktikkum 5/wawan/assett/totalgaji.png",
-    "praktikkum 5/wawan/assett/total_gaji.png",
-    "praktikkum 5/wawan/assett/seletavggaji.png",
-    "praktikkum 7/wawan/praktikum 7.md",
     "praktikkum 7/wawan/praktikum 7.pdf",
     "dfgd.md",
-    "praktikkum 7/ariel/catatan aril.md",
     "praktikkum 5/penilaian kelompok/penilaian kelompok.md",
-    "praktikkum 5/rivaldo/AGREGASI (GROUP BY & HAVING).md",
     "asset/Screenshot.md",
     "asset",
     "praktikkum 7/iqbal/asset",
     "praktikkum 7/iqbal/assett",
     "praktikkum 7/iqbal/New folder",
     "Basis data iqbal.md",
-    "praktikkum 5/iqbal/asset",
-    "basdat iqbal.zip",
-    "praktikkum 5/wawan/basis data xii.pdf",
     "assett/JumlahPegawai.md",
     "basisdata_XII/assett/assett.md",
     "praktikkum 7/aldo/CATATAN TABEL - PRAKTIKKUM 7.md",
     "AGREGASI (GROUP BY & HAVING).md",
-    "praktikkum 7/indra/assett/assett.md",
-    "praktikkum 7/indra/basis data xii.md"
+    "praktikkum 7/indra/assett/assett.md"
   ]
 }

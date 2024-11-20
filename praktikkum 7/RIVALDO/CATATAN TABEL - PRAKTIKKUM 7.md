@@ -403,3 +403,7 @@ Hasil :
 - ORDER BY c.customerID = untuk mengurut data berdasarkan kolom customerID dari tabel c(customers)
 
 hasilnya = jadi, kolom yang dikelompokkan adalah customerID dan companyName dan tabel diurutkan berdasarkan kolom customerID
+
+# TABEL KESELURUHAN 
+
+![](Assets/tabeldo.jpg)

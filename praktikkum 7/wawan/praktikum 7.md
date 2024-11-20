@@ -340,3 +340,7 @@ sql
 - hasilnya = jadi, kolom yang dikelompokkan adalah customerID dan companyName dan tabel diurutkan berdasarkan kolom customerID
 *HASILNYA:*
 ![](assett/10.png)
+
+
+# TABEL KESELURUHAN 
+![](assett/tbelwan.JPG)
