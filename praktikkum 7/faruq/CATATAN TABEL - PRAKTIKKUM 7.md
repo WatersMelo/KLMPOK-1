@@ -338,5 +338,5 @@ MariaDB [company_faruq]> SELECT c.customerid, c.companyname, ROUND(SUM((1-od.dis
 
 # TABEL KESELURUHAN
 
-![](assets/CAPTURE.PNG)
+![](ASSETS/keseluruhan.png)
 
