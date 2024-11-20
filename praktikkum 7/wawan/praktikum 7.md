@@ -343,4 +343,4 @@ sql
 
 
 # TABEL KESELURUHAN 
-![](assett/tbelwan.JPG)
+![](assett/tbelwan.jpg)
