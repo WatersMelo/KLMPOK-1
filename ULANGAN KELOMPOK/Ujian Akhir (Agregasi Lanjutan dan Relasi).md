@@ -112,36 +112,37 @@ ORDER BY
 ![](assets/RekapDataPenjualanBulanIni.jpg)
 
 
-### 2. **Siswa dengan Pengeluaran Tertinggi:****
-Tujuan: Menampilkan siswa dengan total pengeluaran tertinggi di kantin selama bulan ini.
+### 2.**Barang yang Paling Banyak Laku:**
+Tujuan: Menampilkan produk yang paling banyak terjual selama bulan ini.
 **Query:**
 ```sql
 SELECT 
-    s.id_siswa, 
-    s.nama_siswa, 
-    SUM(t.total_bayar) AS total_pengeluaran
+    p.id_produk, 
+    p.nama_produk, 
+    SUM(dt.jumlah) AS total_terjual
 FROM 
-    transaksi t
+    detail_transaksi dt
 JOIN 
-    siswa s ON t.id_siswa = s.id_siswa
+    produk p ON dt.id_produk = p.id_produk
+JOIN 
+    transaksi t ON dt.id_transaksi = t.id_transaksi
 WHERE 
     MONTH(t.tanggal_transaksi) = MONTH(CURDATE()) 
     AND YEAR(t.tanggal_transaksi) = YEAR(CURDATE()) 
 GROUP BY 
-    s.id_siswa
+    p.id_produk
 ORDER BY 
-    total_pengeluaran DESC
+    total_terjual DESC
 LIMIT 1;
+
 ```
 **penjelasan:**
-- **`MONTH(t.tanggal_transaksi)`**: Sama seperti pada query 1, digunakan untuk mengambil bulan dari kolom `tanggal_transaksi`.
-- **`YEAR(t.tanggal_transaksi)`**: Digunakan untuk mengambil tahun dari kolom `tanggal_transaksi`.
-- **`WHERE MONTH(t.tanggal_transaksi) = MONTH(CURDATE()) AND YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**:
-    - Filter ini memastikan bahwa hanya data transaksi yang terjadi pada bulan **sekarang** (bulan yang sama dengan hari ini) yang diproses.
-##### Fungsi Lain yang Digunakan:
-- **`SUM(t.total_bayar)`**: Menghitung total pengeluaran siswa berdasarkan semua transaksi yang dilakukan.
-- **`GROUP BY s.id_siswa`**: Mengelompokkan data berdasarkan ID siswa, sehingga setiap siswa mendapatkan total pengeluarannya.
-- **`ORDER BY total_pengeluaran DESC`**: Mengurutkan siswa berdasarkan total pengeluaran dari yang terbesar ke yang terkecil.
-- **`LIMIT 1`**: Menampilkan hanya 1 siswa dengan pengeluaran tertinggi.
+- **`SUM(dt.jumlah)`**: Menghitung total jumlah barang yang terjual untuk setiap produk.
+- **`MONTH(t.tanggal_transaksi)`**: Mengambil bulan dari kolom `tanggal_transaksi` untuk memfilter transaksi berdasarkan bulan saat ini.
+- **`YEAR(t.tanggal_transaksi)`**: Mengambil tahun dari kolom `tanggal_transaksi` untuk memastikan hanya transaksi pada tahun saat ini yang diproses.
+- **`WHERE MONTH(t.tanggal_transaksi) = MONTH(CURDATE()) AND YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**:Digunakan untuk memfilter transaksi yang hanya terjadi pada bulan dan tahun ini.
+- **`GROUP BY p.id_produk`**: Mengelompokkan data berdasarkan ID produk, sehingga setiap produk memiliki total jumlah terjualnya.
+- **`ORDER BY total_terjual DESC`**: Mengurutkan produk berdasarkan jumlah terjual dari yang terbanyak ke yang paling sedikit.
+- **`LIMIT 1`**: Menampilkan hanya satu produk dengan jumlah terjual tertinggi.
 **hasilnya:**
 ![](assets/siswadengan.jpg)
