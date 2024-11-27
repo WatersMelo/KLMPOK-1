@@ -16,7 +16,7 @@ CREATE TABLE siswa (
     saldo DECIMAL(10, 2) NOT NULL
 );
 ```
-2. **TABEL TRANSAKSI**
+1. **TABEL TRANSAKSI**
 ```SQL
 CREATE TABLE transaksi (
     id_transaksi INT AUTO_INCREMENT PRIMARY KEY,
@@ -47,7 +47,8 @@ CREATE TABLE detail_transaksi (
     FOREIGN KEY (id_produk) REFERENCES produk(id_produk)
 );
 ```
-
+**tampilan data yang berealisasi**
+![](assets/tampilantabel.jpg)
 # CONTOH 
 ### tabel yang digunakan 
 1. **Tabel `produk`**  
@@ -69,8 +70,7 @@ CREATE TABLE detail_transaksi (
     - `id_produk` (FK): ID produk yang dibeli.
     - `jumlah`: Jumlah produk yang dibeli.
     - `total_harga`: Total harga produk yang dibeli (jumlah * harga).
-
-### 1. **Contoh Rekap Data Penjualan Bulan Ini:**
+### 1. **Rekap Data Penjualan Bulan Ini:**
 Tujuan: Menghitung total penjualan untuk setiap produk yang terjual pada bulan ini.
 **Query:**
 ```sql
@@ -112,7 +112,7 @@ ORDER BY
 ![](assets/RekapDataPenjualanBulanIni.jpg)
 
 
-### 2. **Contoh Siswa dengan Pengeluaran Tertinggi:****
+### 2. **Siswa dengan Pengeluaran Tertinggi:****
 Tujuan: Menampilkan siswa dengan total pengeluaran tertinggi di kantin selama bulan ini.
 **Query:**
 ```sql
