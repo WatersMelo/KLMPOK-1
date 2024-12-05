@@ -11,6 +11,18 @@
             "id": "4ade02f368acc8e5",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ULANGAN KELOMPOK/Ujian Akhir (Agregasi Lanjutan dan Relasi).pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Ujian Akhir (Agregasi Lanjutan dan Relasi)"
+            }
+          },
+          {
+            "id": "81669a5011ade531",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "ULANGAN KELOMPOK/Ujian Akhir (Agregasi Lanjutan dan Relasi).md",
@@ -21,7 +33,8 @@
               "title": "Ujian Akhir (Agregasi Lanjutan dan Relasi)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,7 +175,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ade02f368acc8e5",
+  "active": "81669a5011ade531",
   "lastOpenFiles": [
     "ULANGAN KELOMPOK/Ujian Akhir (Agregasi Lanjutan dan Relasi).pdf",
     "ULANGAN KELOMPOK/Ujian Akhir (Agregasi Lanjutan dan Relasi).md",

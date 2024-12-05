@@ -48,7 +48,7 @@ CREATE TABLE detail_transaksi (
 );
 ```
 **tampilan data yang berealisasi**
-![](assets/tampilantabel.jpg)
+![](assets/REALISASI.jpg)
 # CONTOH 
 ### tabel yang digunakan 
 1. **Tabel `produk`**  
