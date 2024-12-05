@@ -95,18 +95,23 @@ ORDER BY
     total_pendapatan DESC;
 ```
 **penjelasan:**
-- **`MONTH(t.tanggal_transaksi)`**: Fungsi `MONTH` digunakan untuk mengambil _bulan_ dari kolom `tanggal_transaksi`.
-    - Misalnya, jika `tanggal_transaksi` adalah `2024-11-25`, maka `MONTH(t.tanggal_transaksi)` akan menghasilkan `11` (November).
-- **`YEAR(t.tanggal_transaksi)`**: Fungsi `YEAR` digunakan untuk mengambil _tahun_ dari kolom `tanggal_transaksi`.
-    - Jika `tanggal_transaksi` adalah `2024-11-25`, maka `YEAR(t.tanggal_transaksi)` akan menghasilkan `2024`.
-- **`CURDATE()`**: Fungsi `CURDATE` digunakan untuk mendapatkan tanggal hari ini (tanggal sekarang).
-    - Misalnya, jika hari ini adalah `2024-11-27`, maka `CURDATE()` menghasilkan `2024-11-27`.
-- **Kenapa digunakan `MONTH(CURDATE())` dan `YEAR(CURDATE())`?**
-    - Ini memastikan hanya transaksi pada bulan **sekarang** (bulan dan tahun yang sama dengan `CURDATE()`) yang diambil. Dengan kata lain, hanya data penjualan untuk **bulan berjalan** yang akan diproses dalam query.
-- **Bagian Penting Lain:**
-    - **`SUM(dt.jumlah)`**: Menghitung total jumlah produk yang terjual.
-    - **`SUM(dt.total_harga)`**: Menghitung total pendapatan dari produk tersebut.
-    - **`HAVING total_terjual > 0`**: Hanya menampilkan produk yang terjual (tidak menampilkan produk dengan penjualan 0).
+- **Bagian SELECT:**
+    - **`p.nama_produk`**: Memilih nama produk dari tabel `produk` untuk ditampilkan.
+    - **`SUM(dt.jumlah) AS total_terjual`**: Menghitung total kuantitas produk yang terjual dari tabel `detail_transaksi`.
+    - **`SUM(dt.total_harga) AS total_pendapatan`**: Menghitung total pendapatan dari penjualan produk berdasarkan `total_harga` di tabel `detail_transaksi`.
+- **Bagian FROM dan JOIN:**
+    - **`transaksi t`**: Mengambil data dari tabel `transaksi`.
+    - **`detail_transaksi dt ON t.id_transaksi = dt.id_transaksi`**: Melakukan join antara tabel `transaksi` dan `detail_transaksi` berdasarkan kolom `id_transaksi`. Hal ini untuk mendapatkan detail produk yang terjual dalam setiap transaksi.
+    - **`produk p ON dt.id_produk = p.id_produk`**: Melakukan join antara tabel `detail_transaksi` dan `produk` untuk mendapatkan nama produk dari ID produk (`id_produk`).
+- **Bagian WHERE:**
+    - **`MONTH(t.tanggal_transaksi) = MONTH(CURDATE())`**: Memfilter data hanya untuk transaksi yang terjadi pada bulan saat ini.
+    - **`YEAR(t.tanggal_transaksi) = YEAR(CURDATE())`**: Memastikan hanya transaksi di tahun ini yang diproses.
+- **Bagian GROUP BY:**
+    - **`p.id_produk`**: Mengelompokkan data berdasarkan ID produk, sehingga total terjual dan total pendapatan dihitung untuk setiap produk.
+- **Bagian HAVING:**
+    - **`total_terjual > 0`**: Memastikan hanya produk yang memiliki penjualan (jumlah lebih dari 0) yang ditampilkan.
+- **Bagian ORDER BY:**
+    - **`total_pendapatan DESC`**: Mengurutkan produk berdasarkan total pendapatan dari yang terbesar ke yang terkecil.
 **hasilnya:**
 
 ![](assets/RekapDataPenjualanBulanIni.jpg)
