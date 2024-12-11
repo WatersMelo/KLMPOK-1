@@ -1,8 +1,8 @@
 
 
 # **STRUKTUR ERD**
-![](assets/ERD.jpg)
-![](assets/ERD1.jpg)
+![](assets/erd.jpg)
+![](assets/erd1.jpg)
 
 
 # Rancangan Database (MySQL)
@@ -161,8 +161,7 @@ ORDER BY
 6. **Bagian ORDER BY**:
     - **`total_pendapatan DESC`**: Mengurutkan hasil berdasarkan total pendapatan, dari yang tertinggi ke terendah.
 **hasilnya:**
-
-![](assets/RekapDataPenjualanBulAnIni.jpg)
+![](assets/RekapDataPenjualanBulanini.jpg)
 **KESIMPULAN:**
 - **Hasil** menunjukkan **4 produk** yang terjual lebih dari 3 unit pada bulan saat ini, diurutkan berdasarkan pendapatan tertinggi.
 - **Produk terlaris**: _Sate Ayam_ dengan total terjual **12 unit** dan total pendapatan **36.000**.
@@ -202,6 +201,7 @@ LIMIT 1;
 - **`LIMIT 1`**: Menampilkan hanya satu produk dengan jumlah terjual tertinggi.
 **hasilnya:**
 ![](assets/siswadengan.jpg)
+
 **KESIMPULAN:**
 Query ini dirancang untuk menentukan produk dengan jumlah penjualan tertinggi selama bulan berjalan. Hasilnya mencakup:
 1. **Produk Terlaris:** Menampilkan nama produk dan total jumlah yang terjual.
