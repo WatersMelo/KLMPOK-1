@@ -199,6 +199,7 @@ LIMIT 1;
 - **`GROUP BY p.id_produk`**: Mengelompokkan data berdasarkan ID produk, sehingga setiap produk memiliki total jumlah terjualnya.
 - **`ORDER BY total_terjual DESC`**: Mengurutkan produk berdasarkan jumlah terjual dari yang terbanyak ke yang paling sedikit.
 - **`LIMIT 1`**: Menampilkan hanya satu produk dengan jumlah terjual tertinggi.
+
 **hasilnya:**
 ![](assets/siswadengan.jpg)
 
