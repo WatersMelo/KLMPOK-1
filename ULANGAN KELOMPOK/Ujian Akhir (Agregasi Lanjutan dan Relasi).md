@@ -161,7 +161,7 @@ ORDER BY
 6. **Bagian ORDER BY**:
     - **`total_pendapatan DESC`**: Mengurutkan hasil berdasarkan total pendapatan, dari yang tertinggi ke terendah.
 **hasilnya:**
-![](assets/RekapDataPenjualanBulanini.jpg)
+![](assets/rekap.jpg)
 **KESIMPULAN:**
 - **Hasil** menunjukkan **4 produk** yang terjual lebih dari 3 unit pada bulan saat ini, diurutkan berdasarkan pendapatan tertinggi.
 - **Produk terlaris**: _Sate Ayam_ dengan total terjual **12 unit** dan total pendapatan **36.000**.
